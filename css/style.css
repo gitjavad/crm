@@ -1,0 +1,9 @@
+body{
+    direction: rtl;
+}
+#sidebar{
+    direction: rtl;
+}
+a{
+    direction: rtl;
+}
