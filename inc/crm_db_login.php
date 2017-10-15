@@ -3,8 +3,6 @@ $username=$_POST['code'];
 $password=$_POST['pass'];
     include("config.php");
     session_start();
-
-echo "<script type='text/javascript'>alert('".$password."')</script>";
     $_SESSION['login_user']=$username;
 $sql = "SELECT user FROM crm WHERE user='$username' and pass='$password'";
 $result = $conn->query($sql);
@@ -16,7 +14,7 @@ $result = $conn->query($sql);
 
     else
     {
-        echo "<script type='text/javascript'>alert('".$result."')</script>";
+        echo "<script type='text/javascript'>alert('error')</script>";
     }
 
 /*$servername = "localhost";
