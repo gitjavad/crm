@@ -1,10 +1,14 @@
 <?php
+$hostname="localhost";
+$user = "hirad_admin15023";
+$pass= "9133647736!@#";
+$mysql_database = "hirad-co_com_site";
+$conn = new mysqli($servername, $username, $pass, $dbname);
 $username=$_POST['code'];
 $password=$_POST['pass'];
-    include("config.php");
     session_start();
     $_SESSION['login_user']=$username;
-$sql = "SELECT user FROM crm WHERE user='$username' and pass='$password'";
+$sql = "SELECT user FROM crm WHERE 'user'='".$username."' and 'pass'='".$password."'";
 $result = $conn->query($sql);
     if (mysqli_num_rows($result) != 0)
     {
