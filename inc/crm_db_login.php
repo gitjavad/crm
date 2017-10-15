@@ -16,6 +16,6 @@ if ($result->num_rows > 0) {
        echo '{ "message": "true" }';
     }
 } else {
-    echo "0 results";
+    echo '{ "message": "false" }';
 }
 $conn->close();
