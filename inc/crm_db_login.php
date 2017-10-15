@@ -4,19 +4,19 @@ $password=$_POST['pass'];
     include("config.php");
     session_start();
 
-echo "<script type='text/javascript'>alert('".$username."')</script>";
+echo "<script type='text/javascript'>alert('".$password."')</script>";
     $_SESSION['login_user']=$username;
 $sql = "SELECT user FROM crm WHERE username='$username' and password='$password'";
 $result = $conn->query($sql);
     if (mysqli_num_rows($result) != 0)
     {
 
-
+        echo "<script type='text/javascript'>alert('".$password."')</script>";
     }
 
     else
     {
-        echo "<script type='text/javascript'>alert('User Name Or Password Invalid!')</script>";
+        echo "<script type='text/javascript'>alert('".$result."')</script>";
     }
 
 /*$servername = "localhost";
