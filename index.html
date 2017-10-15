@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" >
     <link rel="stylesheet"  type="text/css" href="css/animate.css" >
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 </head>
 <body>
@@ -24,8 +25,46 @@
 
 
     <hr>
-        <div class="wrap">
+        <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6 col-md-offset-3">
+            <div id="iosBlurBg">
+                <div id="whiteBg"></div>
+            </div>
+            <div id="bottomEnter"></div>
+            <div id="bottomBlurBg"></div>
+            <!-- Login Form -->
+            <div class="loginForm">
+                <div class="title">
+                    <p>LOG INTO<br><span>SYSTEM</span></p>
+                    <hr>
+                    <hr class="short">
+                </div>
+                <form>
+                    <div class="col-3">
+                        <input class="effect-2" type="text" placeholder="Login...">
+                        <span class="focus-border"></span>
+
+                        <input class="effect-2" type="password" placeholder="Password...">
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="forget">
+                        <button class="btn btn-default btn-sm">FORGOT PASSWORD?</button>
+                    </div>
+
+                </form>
+            </div>
+            <a href="#">
+                <div class="enterButton">
+                    <i class="fa fa-lock fa-2x text-white"></i><br>
+                    <span class="enterText text-white">Enter</span>
+                </div>
+            </a>
+        </div>
+    </div>
+        <div class="wrap" style="display: none">
             <div class="content" style="margin-right:25%">
+
 
                 <div class="row">
 
@@ -36,19 +75,7 @@
                     </div>
 
                         <div class="column col-xs-9 animated slideInLeft" id="main">
-                        <!--    <div class="row">
-                                <div class="col-md-3" >
-                                    <input type="text" id="type" onkeyup="myFunction()" placeholder="نوع محصول">
-                                </div>
-                                <div class="col-md-3" >
-                                    <input type="text" id="code" onkeyup="myFunction()" placeholder="کد محصول">
-                                </div>
-                                <div class="col-md-3" >
-                                    <input type="text" id="price" onkeyup="myFunction()" placeholder="قیمت">
-                                </div>
-                            </div>
-                    -->
-                            <table id="example" class="display" cellspacing="0" width="100%">
+                            <table id="Price_list_tb" class="display" cellspacing="0" width="100%">
                                 <thead>
                                 <tr>
                                     <th>نام محصول</th>
@@ -93,11 +120,11 @@
         crossorigin="anonymous">
 
 </script>
-    <script  src="js/jquery.form.min.js"></script>
-    <script  src="js/crm.js"></script>
+
     <script  src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <script  src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script  src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-
+    <script  src="js/jquery.form.min.js"></script>
+    <script  src="js/crm.js"></script>
 </body>
 </html>
