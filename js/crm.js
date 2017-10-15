@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#Price_list_tb').DataTable( {
         "pagingType": "full_numbers"
     } );
-    $('#jsonForm').ajaxForm({
+    $('form').ajaxForm({
 
         dataType:  'json',
         success:   processJson
