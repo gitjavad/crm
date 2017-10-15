@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         /*echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
         $age=array("code_product"=>$row["code_product"],"material"=>$row["material"],"price_co"=>$row["price_co"],"company"=>);*/
-        echo '{ "message": "'.$row.'" }';
+        echo '{ "message": "hi" }';
     }
 } else {
     echo "0 results";
