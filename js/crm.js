@@ -11,9 +11,8 @@ $(document).ready(function() {
     function processJson(data) {
 var frm_login = document.getElementById('frm_login');
 var main_page = document.getElementById('main_page');
-        var ss=data.message.toJSON();
-        var json=JSON.stringify(ss);
-console.log(json);
+
+console.log(data.message[0]);
         /*if(data.message){
 
             frm_login.className = frm_login.className.replace(/\b slideInLeft\b/,'');
