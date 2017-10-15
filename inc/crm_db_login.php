@@ -1,8 +1,9 @@
 <?php
+$username=$_POST['username'];
+$password=$_POST['password'];
     include("config.php");
     session_start();
-    $username=$_POST['username'];
-    $password=$_POST['password'];
+
 echo "<script type='text/javascript'>alert('".$username."')</script>";
     $_SESSION['login_user']=$username;
 $sql = "SELECT user FROM crm WHERE username='$username' and password='$password'";
