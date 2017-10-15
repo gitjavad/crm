@@ -11,7 +11,7 @@ $result = $conn->query($sql);
     if (mysqli_num_rows($result) != 0)
     {
 
-        echo "<script type='text/javascript'>alert('".$password."')</script>";
+        echo "<script type='text/javascript'>alert('hi')</script>";
     }
 
     else
