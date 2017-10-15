@@ -16,13 +16,13 @@ var main_page = document.getElementById('main_page');
             frm_login.className = frm_login.className.replace(/\b slideInLeft\b/,'');
             frm_login.className += ' slideOutRight';
             main_page.style.cssText = 'display:block';
-            document.getElementById('body_list').append('<tr>');
-            document.getElementById('body_list').append('<td>'+ data.code_product+'</td>');
-            document.getElementById('body_list').append('<td>'+ data.material+'</td>');
-            document.getElementById('body_list').append('<td>'+ data.price_co+'</td>');
-            document.getElementById('body_list').append('<td>'+ data.company+'</td>');
-            document.getElementById('body_list').append('<td>'+ data.des+'</td>');
-            document.getElementById('body_list').append('</tr>');
+            document.getElementById('body_list').append("<tr>"+
+            "<td>+ data.code_product+</td>"+
+            "<td>+ data.material+</td>"+
+           "<td>+ data.price_co+</td>"+
+         " <td>+ data.company+</td>"+
+     "<td>+ data.des+</td>"+
+         "</tr>");
             }
 
         }
