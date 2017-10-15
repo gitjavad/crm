@@ -3,84 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>لیست قیمت ها</title>
-    <link rel="stylesheet" type="text/css"  href="css/style.css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" >
-    <link rel="stylesheet"  type="text/css" href="css/animate.css" >
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
 
 </head>
 <body>
 
+<?php
+session_start();
+$login_session=$_SESSION['login_user'];
+?>
+<span class=""></span>
+<form action="inc/crm_db_login.php" method="post">
+    <input type="text" placeholder="username">
+    <input type="password" placeholder="password">
+    <input type="submit"><span class=""></span>
+</form>
 
 
-        <span class=""></span>
-       <form action="in/crm_db_login.php">
-           <input type="text" placeholder="username">
-           <input type="password" placeholder="password">
-           <input type="submit"><span class=""></span></button>
-       </form>
+<div class="wrap" style="display: none">
+    <div class="container-fluid">
+
+        <p>نام فروشگاه: </p>
+        <p>...........</p>
+        <p>کدمشتری: </p>
+        <p>............</p>
 
 
-        <div class="wrap" style="display: none">
-            <div class="container-fluid">
-
-                <p>نام فروشگاه: </p><p>...........</p>
-                <p>کدمشتری: </p><p>............</p>
+        <hr>
+        <div class="content" style="margin-right:25%">
 
 
-                <hr>
-            <div class="content" style="margin-right:25%">
+            <div class="row">
+
+                <div class="column col-xs-3" id="sidebar">
+                    <h5>منو</h5>
+                    <a href="#">لیست قیمت ها</a><br>
+                    <a href="#"> اطلاعات </a>
+                </div>
+
+                <div class="column col-xs-9 animated slideInLeft" id="main">
+                    <table id="Price_list_tb" class="display" cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th>نام محصول</th>
+                            <th>کد محصول</th>
+                            <th>قیمت</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Esil</td>
+                            <td>BL945</td>
+                            <td> 90000</td>
+                        </tr>
+                        <tr>
+                            <td>Kronotex</td>
+                            <td>HD945</td>
+                            <td> 90000</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
 
 
-                <div class="row">
-
-                    <div class="column col-xs-3" id="sidebar">
-                        <h5>منو</h5>
-                        <a href="#">لیست قیمت ها</a><br>
-                        <a href="#"> اطلاعات </a>
-                    </div>
-
-                        <div class="column col-xs-9 animated slideInLeft" id="main">
-                            <table id="Price_list_tb" class="display" cellspacing="0" width="100%">
-                                <thead>
-                                <tr>
-                                    <th>نام محصول</th>
-                                    <th>کد محصول</th>
-                                    <th>قیمت</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Esil</td>
-                                    <td>BL945</td>
-                                    <td> 90000</td>
-                                </tr>
-                                <tr>
-                                    <td>Kronotex</td>
-                                    <td>HD945</td>
-                                    <td> 90000</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-
-
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
     </div>
+</div>
+
+
+</div>
 
 
 <script
@@ -90,10 +91,10 @@
 
 </script>
 
-    <script  src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-    <script  src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script  src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-    <script  src="js/jquery.form.min.js"></script>
-    <script  src="js/crm.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<script src="js/crm.js"></script>
 </body>
 </html>
