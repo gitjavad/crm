@@ -1,9 +1,38 @@
-body{
+/* custom template */
+html, body {
+    height: 100%;
     direction: rtl;
 }
-#sidebar{
-    direction: rtl;
+
+.wrapper, .row {
+    height: 100%;
+    margin-left:0;
+    margin-right:0;
 }
-a{
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+#sidebar {
+    background-color:#eee;
+    height:100%;
+    position:fixed;
+    right: 5px;
+    width: 15%;
+}
+h5{
+    background-color: darkolivegreen;
+
+}
+#example th{
     direction: rtl;
+    text-align: right;
 }
