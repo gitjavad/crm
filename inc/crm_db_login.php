@@ -12,8 +12,8 @@ if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
        /* echo "code: " . $row["code"]. " - phone: " . $row["phone"]. "-address: " . $row["address"]. "<br>";
-
-       echo '{ "message": "true" }';*/
+*/
+       echo '{ "message": "true" }';
     }
 } else {
     echo '{ "message": "false" }';
