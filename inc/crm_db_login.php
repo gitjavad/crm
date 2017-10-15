@@ -6,7 +6,7 @@ $password=$_POST['pass'];
 
 echo "<script type='text/javascript'>alert('".$password."')</script>";
     $_SESSION['login_user']=$username;
-$sql = "SELECT user FROM crm WHERE username='$username' and password='$password'";
+$sql = "SELECT user FROM crm WHERE user='$username' and pass='$password'";
 $result = $conn->query($sql);
     if (mysqli_num_rows($result) != 0)
     {
