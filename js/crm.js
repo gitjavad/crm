@@ -25,11 +25,11 @@ $(document).ready(function() {
         var col4 = row.insertCell(3);
         var col5 = row.insertCell(4);
 
-        col1.innerHTML = data.code_product[0];
-        col2.innerHTML = data.material[0];
-        col3.innerHTML = data.price_co[0];
-        col4.innerHTML = data.company[0];
-        col5.innerHTML = data.des[0];
+        col1.innerHTML = data.code_product;
+        col2.innerHTML = data.material;
+        col3.innerHTML = data.price_co;
+        col4.innerHTML = data.company;
+        col5.innerHTML = data.des;
 
 
     }

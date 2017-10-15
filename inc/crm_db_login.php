@@ -12,10 +12,10 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
-      $suc="true";
+      $suc=true;
     }
 } else {
-    $suc="false";
+    $suc=false;
 }
 if ($suc) {
     $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
