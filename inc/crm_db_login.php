@@ -12,8 +12,8 @@ if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
        /* echo "code: " . $row["code"]. " - phone: " . $row["phone"]. "-address: " . $row["address"]. "<br>";
-        */
-       echo '{ "message": "true" }';
+
+       echo '{ "message": "true" }';*/
     }
 } else {
     echo '{ "message": "false" }';
@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         /*echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
         $age=array("code_product"=>$row["code_product"],"material"=>$row["material"],"price_co"=>$row["price_co"],"company"=>);*/
-        echo '{ "res": "'.$row.'" }';
+        echo '{ "message": "'.$row.'" }';
     }
 } else {
     echo "0 results";
