@@ -8,20 +8,19 @@ $username=$_POST['code'];
 $password=$_POST['pass'];
 
 
-$sql = "SELECT user FROM crm WHERE user='$username' and pass='$password'";
+$sql = "SELECT code FROM crm_login WHERE code='$username' and pass='$password'";
 echo $sql;
 $result = $conn->query($sql);
-    if (mysqli_num_rows($result) != 0)
-    {
+if ($result->num_rows > 0) {
 
-        echo "<script type='text/javascript'>alert('hi')</script>";
+    while($row = $result->fetch_assoc()) {
+        echo "code: " . $row["code"]. " - phone: " . $row["phone"]. "-address: " . $row["address"]. "<br>";
     }
-
-    else
-    {
-        echo "<script type='text/javascript'>alert('error')</script>";
-    }
-
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
 /*$servername = "localhost";
 $username = "hirad_admin15023";
 $password = "9133647736!@#";
