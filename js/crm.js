@@ -32,4 +32,4 @@ var main_page = document.getElementById('main_page');
             }
         }
 
-}} );
+} );
