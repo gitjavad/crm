@@ -29,6 +29,6 @@ if ($result->num_rows > 0) {
         echo '{ "message": "hi" }';
     }
 } else {
-    echo "0 results";
+    echo '{ "message": "oh no" }';
 }
 $conn->close();
