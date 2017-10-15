@@ -13,8 +13,6 @@ var frm_login = document.getElementById('frm_login');
 var main_page = document.getElementById('main_page');
 
 
-        if(data.message){
-
             frm_login.className = frm_login.className.replace(/\b slideInLeft\b/,'');
             frm_login.className += ' slideOutRight';
             main_page.style.cssText = 'display:block';
@@ -26,10 +24,7 @@ var main_page = document.getElementById('main_page');
             document.getElementById('body_list').append('<td>'+ data.des+'</td>');
             document.getElementById('body_list').append('</tr>');
             }
-            else {
-               alert(data.message);
 
-            }
         }
 
-} );
+ );
