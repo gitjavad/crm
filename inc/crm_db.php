@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "hirad_admin15023";
 $password = "9133647736!@#";
 $dbname = "hirad-co_com_site";
