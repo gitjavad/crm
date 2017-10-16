@@ -13,7 +13,7 @@ $(document).ready(function() {
             console.log(data[i].code_product);
         }*/
 
-
+if (data.message){
        var frm_login = document.getElementById('frm_login');
         var main_page = document.getElementById('main_page');
         frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
@@ -38,7 +38,7 @@ var i;
 
 
 
-    }
+    }}
 
 });
 
