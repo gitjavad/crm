@@ -1,9 +1,9 @@
 
 $(document).ready(function() {
     $('#modal1').modal();
-    $(".sub_log").click(function () {
-        $('form').submit();
-        $('form').ajaxSubmit({
+
+
+        $('form').ajaxForm({
 
             dataType: 'json',
             success: processJson
@@ -52,5 +52,5 @@ $(document).ready(function() {
     })
 
 
-});
+);
 
