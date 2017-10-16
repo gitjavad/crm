@@ -45,3 +45,10 @@ body{
     padding-top: 10%;
     margin-right: 19%;
 }
+.frm_ls{
+    height: 201px;
+    background: white;
+}
+.modal-content{
+    background: yellowgreen;
+}
