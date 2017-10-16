@@ -21,8 +21,7 @@ if ($result->num_rows > 0) {
 }
 
 /*if ($suc) {*/
-echo '{ "message": "TRUE1" }';
-    /*$sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
+    $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
     $result = $conn->query($sql);
     $request_db = array();
 
