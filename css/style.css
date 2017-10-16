@@ -48,6 +48,7 @@ body{
 .frm_ls{
     height: 201px;
     background: white;
+    padding-right: 50px !important;
 }
 .modal-content{
     background: yellowgreen;
