@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     echo '{ "message": "false1" }';
 }
 
-if ($suc) {
+/*if ($suc) {
     $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
     $result = $conn->query($sql);
 $request_db = array();
@@ -38,5 +38,5 @@ $request_db = array();
     echo '{ "message": "false3" }';
 
 }
-$conn->close();
+$conn->close();*/
 /*echo json_encode($request_db);*/
