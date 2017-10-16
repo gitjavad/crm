@@ -19,6 +19,6 @@ html, body {
     font-family: BYekan;
 }
 
-.fa{
-    font-size: 10em;
+.my_ico{
+    font-size: 10em !important;
 }
