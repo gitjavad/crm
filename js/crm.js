@@ -43,7 +43,7 @@ if (data[0].message){
 
 
 
-    }}
+    }
 
 });
 
