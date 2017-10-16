@@ -40,7 +40,7 @@ $(document).ready(function() {
                 function getdata() {
                     return data;
                 }
-                window.location.href("http://hirad-co.com/crm/main.html")
+                location="http://hirad-co.com/crm/main.html"
 
 
                 }
