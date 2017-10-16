@@ -14,7 +14,8 @@ if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
 
-        $suc=true;
+        $suc = true;
+        printf(json_encode($row));
 
     }
 } else {
@@ -41,6 +42,7 @@ if ($suc) {
 
 }
 $conn->close();
-if(count($request_db)>0){
+/*if(count($request_db)>0){
     printf(json_encode($request_db));
 }
+*/
