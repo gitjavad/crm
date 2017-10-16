@@ -38,4 +38,4 @@ if ($result->num_rows > 0) {
 
 
 $conn->close();
-/*echo json_encode($request_db);*/
+printf(json_encode($request_db));
