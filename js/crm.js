@@ -37,7 +37,7 @@ $(document).ready(function() {
                     col5.innerHTML = data[i].des;
 
                 }*/
-                export function getdata() {
+                function getdata() {
                     return data;
                 }
 

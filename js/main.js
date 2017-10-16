@@ -1,4 +1,5 @@
+importScripts("crm.js")
 $(document).ready(function () {
-   import {getdata} from "crm";
+
 
 });
