@@ -37,26 +37,23 @@
                 <form class="col s6 z-depth-4 frm_ls" action="inc/crm_db_login.php" method="post">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="code" type="text" class="validate">
-                            <label for="code">کدکاربری</label>
+                            <input name="code" id="code_id" type="text" class="validate">
+                            <label for="code_id">کدکاربری</label>
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="input-field col s12 pass_in">
-                            <input id="pass" type="password" class="validate">
-                            <label for="pass">کلمه عبور</label>
+                            <input name="pass" id="pass_id" type="password" class="validate">
+                            <label for="pass_id">کلمه عبور</label>
                         </div>
 
                     </div>
 
                    <!--<a class="btn-floating btn-large waves-effect waves-light red sub_log" onclick="document.forms[0].submit();return false;"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
 -->
-                    <!--<a class="btn-floating btn-large waves-effect waves-light red sub_log" ><i class="fa fa-sign-in" aria-hidden="true"></i></a>-->
-                    <div class="btn-floating btn-large waves-effect waves-light red sub_log" >
-                    <input type="submit">
-                        <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    </div>
+                    <a class="btn-floating btn-large waves-effect waves-light red sub_log" ><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+
                 </form>
                 <div class="col s6 ">
                     <img class="user_login_ico_base"  src="img/card_licence.png" id="main_user_login">
