@@ -35,3 +35,8 @@ body{
     padding-top: 30%;
     padding-bottom: 30%;
 }
+user_login_ico img{
+    width: 200px !important;
+    padding-top: 10%;
+    margin-right: 19%;
+}
