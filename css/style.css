@@ -24,5 +24,8 @@ html, body {
 }
 .icon_row{
     margin-top: 20%;
-    color: #6f2c91;
+    color: #ececec;
+}
+body{
+    background: #9aca3c;
 }
