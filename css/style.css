@@ -61,3 +61,6 @@ body{
 .pass_in{
     padding-top: -10px;
 }
+.modal{
+    overflow: hidden !important;
+}
