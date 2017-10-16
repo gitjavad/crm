@@ -37,5 +37,5 @@ echo '{ "message": "TRUE1" }';
     }
 
 
-$conn->close();
+
 /*echo json_encode($request_db);*/
