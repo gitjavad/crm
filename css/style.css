@@ -21,6 +21,8 @@ html, body {
 
 .my_ico{
     font-size: 10em !important;
+    border-bottom: 1px dashed;
+    padding-bottom: 34px;
 }
 .icon_row{
     padding-top: 10%;
