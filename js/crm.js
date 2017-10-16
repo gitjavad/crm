@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
-    $('#Price_list_tb').DataTable({
-        "pagingType": "full_numbers"
-    });
+
     $('form').ajaxForm({
 
         dataType: 'json',
@@ -35,3 +33,4 @@ console.log(data.message)
     }
 
 });
+

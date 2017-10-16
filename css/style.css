@@ -2,6 +2,7 @@
 html, body {
     height: 100%;
     direction: rtl;
+    font-family: Algerian;
 }
 
 .wrapper, .row {
