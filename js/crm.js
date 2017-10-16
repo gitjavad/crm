@@ -14,17 +14,20 @@ $(document).ready(function() {
         frm_login.className += ' slideOutRight';
         main_page.style.cssText = 'display:block';
         var table = document.getElementById('body_list');
-        var row = table.insertRow(0);
-        var col1 = row.insertCell(0);
-        var col2 = row.insertCell(1);
-        var col3 = row.insertCell(2);
-        var col4 = row.insertCell(3);
-        var col5 = row.insertCell(4);
-        col1.innerHTML = data[0].code_product;
-        col2.innerHTML = data[0].material;
-        col3.innerHTML = data[0].price_co;
-        col4.innerHTML = data[0].company;
-        col5.innerHTML = data[0].des;
+        for(var i=0;i=data.length;i++){
+            var row = table.insertRow(0);
+            var col1 = row.insertCell(0);
+            var col2 = row.insertCell(1);
+            var col3 = row.insertCell(2);
+            var col4 = row.insertCell(3);
+            var col5 = row.insertCell(4);
+            col1.innerHTML = data[i].code_product;
+            col2.innerHTML = data[i].material;
+            col3.innerHTML = data[i].price_co;
+            col4.innerHTML = data[i].company;
+            col5.innerHTML = data[i].des;
+        }
+
 
 
     }
