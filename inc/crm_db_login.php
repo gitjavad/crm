@@ -21,13 +21,13 @@ if ($result->num_rows > 0) {
 if ($suc) {
     $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
     $result = $conn->query($sql);
-
+$request_db = array();
     if ($result->num_rows > 0) {
 
         while ($row = $result->fetch_assoc()) {
 
-
-            echo json_encode($row);
+           array_push($request_db,$row);
+            echo json_encode($request_db);
         }
     } else {
 
