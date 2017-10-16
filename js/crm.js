@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
 
     function processJson(data) {
-        console.log(data.message);
+        console.log(data.length);
        /* var frm_login = document.getElementById('frm_login');
         var main_page = document.getElementById('main_page');
         frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
