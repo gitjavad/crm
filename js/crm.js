@@ -11,7 +11,7 @@ $(document).ready(function() {
         /*var i;
         for (i=0;i<data.length;i++){
             console.log(data[i].code_product);
-        }*?
+        }*/
 
 
        var frm_login = document.getElementById('frm_login');
