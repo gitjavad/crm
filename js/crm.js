@@ -14,8 +14,8 @@ $(document).ready(function() {
         frm_login.className += ' slideOutRight';
         main_page.style.cssText = 'display:block';
         var table = document.getElementById('body_list');
-        console.log(data.length);
-        /*for(var i=0;i=data.length;i++){
+var i;
+        for( i=0;i=data.length;i++){
             var row = table.insertRow(0);
             var col1 = row.insertCell(0);
             var col2 = row.insertCell(1);
@@ -27,7 +27,7 @@ $(document).ready(function() {
             col3.innerHTML = data[i].price_co;
             col4.innerHTML = data[i].company;
             col5.innerHTML = data[i].des;
-        }*/
+        }
 
 
 
