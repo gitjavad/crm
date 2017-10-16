@@ -12,7 +12,7 @@ $(document).ready(function() {
         for (i=0;i<data.length;i++){
             console.log(data[i].code_product);
         }*/
-if (data[0].message="true"){
+if (data[0].message=="true"){
     var frm_login = document.getElementById('frm_login');
     var main_page = document.getElementById('main_page');
     frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
