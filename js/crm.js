@@ -40,7 +40,7 @@ $(document).ready(function() {
                 function getdata() {
                     return data;
                 }
-export default {getdata};
+                export default { getdata }
                 window.location.href("../main.html")
                 }
             else{
