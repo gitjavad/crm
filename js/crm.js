@@ -40,8 +40,9 @@ $(document).ready(function() {
                 function getdata() {
                     return data;
                 }
+                console.log(location.pathname);
 
-                window.location.href("/main.html")
+
                 }
             else{
                 console.log("ohno mother fuck get out")
