@@ -1,8 +1,22 @@
-/* custom template */
+@font-face {
+    font-family: 'IranSans';
+    src: url('font/IranSans.woff') format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'IranSans';
+    src: url('font/IranSansBold.woff') format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'BYekan';
+    src: url('font/BYekan.woff') format('woff');
+    font-weight: normal;
+}
 html, body {
     height: 100%;
     direction: rtl;
-    font-family: Algerian;
+    font-family: BYekan;
 }
 
 .wrapper, .row {
