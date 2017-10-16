@@ -62,5 +62,6 @@ body{
     padding-top: -10px;
 }
 .modal{
+    height: 241px;
     overflow: hidden !important;
 }
