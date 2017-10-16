@@ -37,10 +37,10 @@ $(document).ready(function() {
                     col5.innerHTML = data[i].des;
 
                 }*/
-                function getdata() {
+                export function getdata() {
                     return data;
                 }
-                export default { getdata }
+
                 window.location.href("../main.html")
                 }
             else{

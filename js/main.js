@@ -1,3 +1,4 @@
 $(document).ready(function () {
-    import {getdata} from "crm.js";
+   import {getdata} from "crm";
+
 });
