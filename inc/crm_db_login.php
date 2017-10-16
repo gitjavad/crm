@@ -12,12 +12,14 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
-      $suc=true;
-
+      echo '{ "message": "true" }';
+        /*$suc=true;*/
     }
 } else {
-    $suc=false;
+    /*$suc=false;*/
+    echo '{ "message": "false1" }';
 }
+
 if ($suc) {
     $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
     $result = $conn->query($sql);
@@ -30,10 +32,11 @@ $request_db = array();
 
         }
     } else {
-
+        echo '{ "message": "false2" }';
     }
 }else{
+    echo '{ "message": "false3" }';
 
 }
 $conn->close();
-echo json_encode($request_db);
+/*echo json_encode($request_db);*/
