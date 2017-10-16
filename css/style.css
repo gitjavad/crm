@@ -35,17 +35,17 @@ body{
     padding-top: 30%;
     padding-bottom: 30%;
 }
-.user_login_ico img :first-child{
+.user_login_ico img:first-child{
     width: 200px !important;
     padding-top: 10%;
     margin-right: -11%;
 }
-.user_login_ico img :nth-child(0){
+.user_login_ico img:nth-child(0){
     width: 200px !important;
     padding-top: 10%;
     margin-right: 19%;
 }
-.user_login_ico img :nth-child(1){
+.user_login_ico img:nth-child(1){
     width: 200px !important;
     padding-top: 10%;
     margin-right: 19%;
