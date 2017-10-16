@@ -49,7 +49,15 @@ body{
     height: 201px;
     background: white;
     padding-right: 50px !important;
+    padding-top: 13px;
 }
 .modal-content{
     background: yellowgreen;
+}
+.sub_log{
+    margin-right: 245px;
+    margin-top: -89px;
+}
+.pass_in{
+    padding-top: -10px;
 }
