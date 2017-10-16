@@ -41,7 +41,7 @@ $(document).ready(function() {
                     return data;
                 }
 
-                window.location.href("../main.html")
+                window.location.href("./main.html")
                 }
             else{
                 console.log("ohno mother fuck get out")
