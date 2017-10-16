@@ -22,3 +22,7 @@ html, body {
 .my_ico{
     font-size: 10em !important;
 }
+.icon_row{
+    margin-top: 20%;
+    color: #6f2c91;
+}
