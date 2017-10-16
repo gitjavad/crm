@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
 
            array_push($request_db,$row);
-            echo '{ "message": "TRUE" }';
+
         }
     } else {
         echo '{ "message": "false2" }';
