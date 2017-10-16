@@ -22,6 +22,7 @@ var i;
             var col3 = row.insertCell(2);
             var col4 = row.insertCell(3);
             var col5 = row.insertCell(4);
+            console.log(i);
             col1.innerHTML = data[i].code_product;
             col2.innerHTML = data[i].material;
             col3.innerHTML = data[i].price_co;
