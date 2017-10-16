@@ -15,14 +15,14 @@ $(document).ready(function() {
         main_page.style.cssText = 'display:block';
         var table = document.getElementById('body_list');
 var i;
-        for( i=0;i=data.length;i++){
+        for( i=0;i < data.length;i++){
             var row = table.insertRow(0);
             var col1 = row.insertCell(0);
             var col2 = row.insertCell(1);
             var col3 = row.insertCell(2);
             var col4 = row.insertCell(3);
             var col5 = row.insertCell(4);
-            console.log(i);
+
             col1.innerHTML = data[i].code_product;
             col2.innerHTML = data[i].material;
             col3.innerHTML = data[i].price_co;
