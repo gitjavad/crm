@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 
         $suc = true;
-        printf(json_encode($row));
+        echo '{ "message": "true" }';
 
     }
 } else {
