@@ -5,7 +5,8 @@ $pass= "9133647736!@#";
 $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 mysqli_set_charset($conn,'utf8');
-$username="123";/*$_POST['code'];*/
+$username=$_POST['code'];
+echo $username;
 $password="123";/*$_POST['pass'];*/
 $sql = "SELECT code FROM crm_login WHERE code='$username' AND pass='$password'";
 $result = $conn->query($sql);
