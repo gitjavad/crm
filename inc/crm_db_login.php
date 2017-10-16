@@ -27,7 +27,7 @@ $request_db = array();
         while ($row = $result->fetch_assoc()) {
 
            array_push($request_db,$row);
-            echo json_encode($request_db);
+            echo $request_db;
         }
     } else {
 
