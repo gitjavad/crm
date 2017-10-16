@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     $('#modal1').modal();
-    $('form').ajaxForm({
+    $('form').ajaxSubmit({
 
         dataType: 'json',
         success: processJson
