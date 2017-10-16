@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-
+    $('#modal1').modal();
     $('form').ajaxForm({
 
         dataType: 'json',
