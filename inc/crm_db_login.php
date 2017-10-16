@@ -1,7 +1,6 @@
 <?php
 $username=$_POST['code'];
 $password=$_POST['pass'];
-echo("salam". $username);
 $hostname="localhost";
 $user = "hirad_admin15023";
 $pass= "9133647736!@#";
