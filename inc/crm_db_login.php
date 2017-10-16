@@ -10,7 +10,7 @@ mysqli_set_charset($conn,'utf8');
 $request_db = array();
 $sql = "SELECT code FROM crm_login WHERE code='$username' AND pass='$password'";
 $result = $conn->query($sql);
-$ok='{ "message": "true" }';
+$ok='{ message: true }';
 $notok='{ "message": "false" }';
 if ($result->num_rows > 0) {
 
