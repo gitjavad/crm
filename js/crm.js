@@ -12,8 +12,7 @@ $(document).ready(function() {
         for (i=0;i<data.length;i++){
             console.log(data[i].code_product);
         }*/
-console.log(data.message)
-        if (data.message){
+
         var frm_login = document.getElementById('frm_login');
         var main_page = document.getElementById('main_page');
         frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
@@ -34,7 +33,7 @@ console.log(data.message)
             col3.innerHTML = data[i].price_co;
             col4.innerHTML = data[i].company;
             col5.innerHTML = data[i].des;
-        }
+
 
 
 
