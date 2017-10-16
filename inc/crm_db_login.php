@@ -14,11 +14,11 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 
         $suc=true;
-        echo '{ "message": "true" }';
+
     }
 } else {
     $suc=false;
-    echo '{ "message": "false" }';
+
 
 }
 
