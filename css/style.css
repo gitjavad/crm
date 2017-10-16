@@ -29,7 +29,7 @@ html, body {
 body{
     background: #9aca3c;
 }
-.user_ico:first-child div{
+.user_ico div:first-child{
     padding-top: 30%;
     padding-bottom: 30%;
 }
