@@ -11,7 +11,7 @@ $request_db = array();
 $sql = "SELECT code FROM crm_login WHERE code='$username' AND pass='$password'";
 $result = $conn->query($sql);
 $ok='{ message: true }';
-$notok='{ "message": "false" }';
+$notok='{ message: false }';
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
