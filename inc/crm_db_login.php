@@ -1,5 +1,5 @@
 <?php
-$username=$_POST['code'];
+$username=isset($_POST['code']);
 $password=$_POST['pass'];
 echo("salam". $username);
 $hostname="localhost";
