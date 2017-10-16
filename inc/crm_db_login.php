@@ -23,7 +23,8 @@ if ($result->num_rows > 0) {
 /*if ($suc) {*/
     $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
     $result = $conn->query($sql);
-$request_db = array();
+    $request_db = array();
+echo '{ "message": "TRUE1" }';
     if ($result->num_rows > 0) {
 
         while ($row = $result->fetch_assoc()) {
