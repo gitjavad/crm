@@ -2,6 +2,7 @@
 $(document).ready(function() {
     $('#modal1').modal();
     $(".sub_log").click(function () {
+        $('form').submit();
         $('form').ajaxSubmit({
 
             dataType: 'json',
