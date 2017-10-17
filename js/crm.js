@@ -70,7 +70,7 @@ function pagenav (mydata) {
     c=Math.ceil(c)
     document.getElementById('total_num').innerHTML=c+"از";
     var in_num=document.getElementById('input_num');
-    in_num.setAttribute('data-length',c);
+    in_num.setAttribute('max',c);
 
 
 }
