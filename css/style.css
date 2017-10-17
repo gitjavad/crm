@@ -71,3 +71,6 @@ body{
 .main_active{
     background: white;
 }
+th, td{
+    text-align: center;
+}
