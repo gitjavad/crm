@@ -15,9 +15,11 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-            pagenav()
 
-                    s_data=data;
+                var dat_len=data.length;
+                    pagenav(dat_len)
+
+
 
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
@@ -61,8 +63,8 @@ $(document).ready(function() {
 
 
     })
-function pagenav (data) {
-    var b=data.length;
+function pagenav (mydata) {
+    var b=mydata
     var c=b/10;
     var con;
     var node = document.createElement("LI");
