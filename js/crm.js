@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('#input_serch').keydown(function(){
         $('#input_serch').ajaxSubmit({
             dataType:'json',
-            url:'s_list.php',
+            url:'/inc/s_list.php',
             type:'post',
             success: search
             });
