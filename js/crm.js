@@ -16,10 +16,11 @@ $(document).ready(function() {
             if (data[0].message=="true"){
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
-                /*var frm_login = document.getElementById('frm_login');
+                var frm_login = document.getElementById('frm_login');
                 var main_page = document.getElementById('main_page');
                 frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
                 frm_login.className += ' slideOutRight';
+                frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
                 var table = document.getElementById('body_list');
                 var i;
@@ -36,7 +37,7 @@ $(document).ready(function() {
                     col4.innerHTML = data[i].company;
                     col5.innerHTML = data[i].des;
 
-                }*/
+                }
 
                 }
             else{
