@@ -65,3 +65,6 @@ body{
     height: 241px;
     overflow: hidden !important;
 }
+.main_body{
+    padding: 0 !important;
+}
