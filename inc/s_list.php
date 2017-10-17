@@ -7,7 +7,7 @@ $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 mysqli_set_charset($conn,'utf8');
 $request_db = array();
-$sql  = "SELECT *  FROM crm WHERE code_product LIKE '%".$s_key."11%'";
+$sql  = "SELECT *  FROM crm WHERE code_product LIKE '%".$s_key."%'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
