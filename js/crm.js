@@ -66,6 +66,7 @@ $(document).ready(function() {
 function pagenav (mydata) {
     var b=mydata
     var c=b/10;
+    c=Math.ceil(c)
     document.getElementById('total_num').innerHTML=c;
     var in_num=document.getElementById('input_num');
     in_num.setAttribute('max',c);
