@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    var s_data;
     $('#modal1').modal();
     $(".sub_log").click(function () {
         $('form').ajaxSubmit({
@@ -14,6 +15,10 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
+
+
+                    s_data=data;
+
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
                 $('#modal1').modal('close');
@@ -56,7 +61,12 @@ $(document).ready(function() {
 
 
     })
+function pagenav () {
+    var b=s_data.length;
+    var c=b/10;
 
+
+}
 
 });
 
