@@ -83,3 +83,6 @@ th{
 .table_row{
     padding:40px !important;
 }
+thead{
+    background: #e4e4e4;
+}
