@@ -96,3 +96,9 @@ form{
     height: 650px;
     overflow-x: hidden;
 }
+.pagination{
+    text-align: center;
+}
+#input_num{
+    width: 20px;
+}
