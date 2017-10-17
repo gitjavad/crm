@@ -66,22 +66,9 @@ $(document).ready(function() {
 function pagenav (mydata) {
     var b=mydata
     var c=b/10;
-    var con;
-    var node;
-    var link;
-    var textnode;
-for (con=0;con<c;con++){
-    node = document.createElement("LI");
-    node.setAttribute("class", "waves-effect li_lis");
-    document.getElementById("main_pagin_li").appendChild(node);
-    link = document.createElement("A");
-    textnode = document.createTextNode(con);
-    link.appendChild(textnode);
-    node.setAttribute("href", "#!");
-    document.getElementById("lis_lis").appendChild(link);
-
-
-}
+    document.getElementById('total_num').innerHTML=c;
+    var in_num=document.getElementById('input_num');
+    in_num.setAttribute('max',c);
 
 }
 
