@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
-    $('#input_serch').onkeydown(function () {
+    $('#input_serch').keydown(function(){
         $('#input_serch').ajaxSubmit({
             dataType:'json',
             url:'s_list.php',
@@ -14,7 +14,7 @@ $(document).ready(function() {
         function search(data) {
             console.log(data.length)
         }
-    })
+    });
     $(".sub_log").click(function () {
         $('form').ajaxSubmit({
 
