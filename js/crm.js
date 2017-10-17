@@ -17,7 +17,7 @@ $(document).ready(function() {
             if (data[0].message=="true"){
 
                 var dat_len=data.length;
-                    pagenav(dat_len)
+                    /*pagenav(dat_len)*/
 
 
 
