@@ -14,7 +14,7 @@ $(document).ready(function() {
         function search(data) {
             console.log(data.length)
         }
-    }
+    })
     $(".sub_log").click(function () {
         $('form').ajaxSubmit({
 
