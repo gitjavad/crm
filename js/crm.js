@@ -20,7 +20,7 @@ $(document).ready(function() {
                 var main_page = document.getElementById('main_page');
                 frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
                 frm_login.className += ' slideOutRight';
-                $('body').className += 'main_active'
+                document.getElementById('body_org').className += 'main_active'
                 frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
                 var table = document.getElementById('body_list');
