@@ -74,6 +74,6 @@ body{
 th, td{
     text-align: center !important;
 }
-th{
-    border: 1px dashed;
+td{
+    border: 1px dashed !important;
 }
