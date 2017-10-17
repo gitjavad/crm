@@ -16,6 +16,7 @@ $(document).ready(function() {
             if (data[0].message=="true"){
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
+                $('#modal1').modal('close');
                 var frm_login = document.getElementById('frm_login');
                 var main_page = document.getElementById('main_page');
                 frm_login.className = frm_login.className.replace(/\b slideInLeft\b/, '');
