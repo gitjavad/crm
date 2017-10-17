@@ -64,7 +64,14 @@ $(document).ready(function() {
 function pagenav () {
     var b=s_data.length;
     var c=b/10;
-
+    var con;
+    var node = document.createElement("LI");
+    var textnode;
+for (con=0;con<c;con++){
+    textnode = document.createTextNode(con);
+    node.appendChild(textnode);
+    document.getElementById("main_pagin_li").appendChild(node);
+}
 
 }
 
