@@ -92,3 +92,7 @@ table{
 form{
     direction: rtl !important;
 }
+table_row{
+    height: 650px;
+    overflow-x: hidden;
+}
