@@ -11,12 +11,12 @@
 
 
 </head>
-<body class="main_active">
+<body class="">
 
 <!-- Navbar goes here -->
 
 <!-- Page Layout here -->
-<div class="row" style="display: none">
+<div id="main_page" class="row" style="display: none">
     <div class="col s9 main_body">
         <nav class="animated slideInDown">
             <div class="nav-wrapper ">
@@ -58,7 +58,7 @@
 </div>
 
 
-<div class="row icon_row" style="display: none">
+<div id="frm_login" class="row icon_row">
 
     <div class="col s4 user_ico">
         <div class="center promo promo-example">
@@ -118,57 +118,11 @@
         </div>
 
 </div>
-    <form id="frm_login" class="animated slideInLeft" action="inc/crm_db_login.php" method="post" style="display: none">
-        <div class="imgcontainer">
-            <img src="img_avatar2.png" alt="Avatar" class="avatar">
-        </div>
-
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" name="code" placeholder="نام کاربری">
-
-            <label><b>Password</b></label>
-            <input type="password" name="pass" placeholder="کلمه عبور">
-
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
 
 
-    </form>
 
 
-    <div id="main_page" class="wrap" style="display: none">
-        <div class="container-fluid">
 
-            <p>نام فروشگاه: </p>
-            <p>...........</p>
-            <p>کدمشتری: </p>
-            <p>............</p>
-
-
-            <hr>
-            <div class="content" style="margin-right:25%">
-
-
-                <div class="row">
-
-                    <div class="column col-xs-3" id="sidebar">
-                        <h5>منو</h5>
-                        <a href="#">لیست قیمت ها</a><br>
-                        <a href="#"> اطلاعات </a>
-                    </div>
-
-                    <div class="column col-xs-9 animated slideInLeft" id="main">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</div>
 <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
