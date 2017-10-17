@@ -67,9 +67,10 @@ function pagenav (mydata) {
     var b=mydata
     var c=b/10;
     var con;
-    var node = document.createElement("LI");
+    var node;
     var textnode;
 for (con=0;con<c;con++){
+    node = document.createElement("LI");
     textnode = document.createTextNode(con);
     node.appendChild(textnode);
     document.getElementById("main_pagin_li").appendChild(node);
