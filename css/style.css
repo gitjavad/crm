@@ -86,6 +86,6 @@ th{
 thead{
     background: #e4e4e4;
 }
-tbody{
+table{
     direction: rtl !important;
 }
