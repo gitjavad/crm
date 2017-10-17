@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
     var s_data;
+    $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
     $(".sub_log").click(function () {
