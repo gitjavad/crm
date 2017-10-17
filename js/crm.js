@@ -68,9 +68,8 @@ function pagenav (mydata) {
     var b=mydata
     var c=b/10;
     c=Math.ceil(c)
-    document.getElementById('total_num').innerHTML=c+"از";
     var in_num=document.getElementById('input_num');
-    in_num.setAttribute('max',c);
+    in_num.innerHTML=c+'صفحه ۱ از '
 
 
 }
