@@ -68,13 +68,18 @@ function pagenav (mydata) {
     var c=b/10;
     var con;
     var node;
+    var link;
     var textnode;
 for (con=0;con<c;con++){
     node = document.createElement("LI");
-    textnode = document.createTextNode(con);
-    node.appendChild(textnode);
-    node.setAttribute("class", "waves-effect");
+    node.setAttribute("class", "waves-effect li_lis");
     document.getElementById("main_pagin_li").appendChild(node);
+    link = document.createElement("A");
+    textnode = document.createTextNode(con);
+    link.appendChild(textnode);
+    node.setAttribute("href", "#!");
+    document.getElementById("lis_lis").appendChild(link);
+
 
 }
 
