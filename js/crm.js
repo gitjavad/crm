@@ -37,11 +37,6 @@ $(document).ready(function() {
                     col5.innerHTML = data[i].des;
 
                 }*/
-                function getdata() {
-                    return data;
-                }
-                location="http://hirad-co.com/crm/main.html"
-
 
                 }
             else{
