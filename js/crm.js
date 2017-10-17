@@ -61,8 +61,8 @@ $(document).ready(function() {
 
 
     })
-function pagenav () {
-    var b=s_data.length;
+function pagenav (data) {
+    var b=data.length;
     var c=b/10;
     var con;
     var node = document.createElement("LI");
