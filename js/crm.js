@@ -73,7 +73,9 @@ for (con=0;con<c;con++){
     node = document.createElement("LI");
     textnode = document.createTextNode(con);
     node.appendChild(textnode);
+    node.setAttribute("class", "waves-effect");
     document.getElementById("main_pagin_li").appendChild(node);
+
 }
 
 }
