@@ -15,7 +15,7 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-
+            pagenav()
 
                     s_data=data;
 
