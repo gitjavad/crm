@@ -69,7 +69,7 @@ function pagenav (mydata) {
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML="<span class=material-icons>chevron_left</span>"+c+'شماره صفحه: ۱ از '+"<span class=material-icons>chevron_right</span>"
+    in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'شماره صفحه: ۱ از '+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
 
 
 }
