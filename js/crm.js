@@ -7,7 +7,8 @@ var tb_p_num;
 now_page=1
     pge_con=10
     $('#right_sp').click(function () {
-       next_page()
+       next_page();
+       console
     })
     $('body').persiaNumber();
     $('#input_num').characterCounter();
@@ -26,7 +27,7 @@ now_page=1
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-
+data_list=data
                 var dat_len=data.length;
                     pagenav(dat_len)
 
@@ -43,7 +44,7 @@ now_page=1
                 frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
 
-                set_table_row(data);
+                set_table_row();
                 }
             else{
                 console.log("ohno mother fuck get out")
@@ -69,16 +70,17 @@ now_page=1
 
 
         function search(mydata) {
+            data_list=mydata
 
-set_table_row(mydata)
+set_table_row()
             pagenav(mydata.length)
         }
     });
     function next_page() {
         now_page=now_page+1
-        pge_con=pge_con+10
+        pge_con=now_page*10
 
-
+set_table_row()
     }
     function prev_page() {
 
@@ -96,15 +98,16 @@ function remove_td() {
     table_td.innerHTML=""
 }
 
-function set_table_row(db) {
+function set_table_row() {
+        var db=data_list;
     var table = document.getElementById('body_list');
 
-    tb_p_num=now_page*pge_con;
+
     if(db.length<10) {
         tb_p_num = db.length
     }
         var d;
-    for (d=0;d<tb_p_num;d++){
+    for (d=0;d<pge_con;d++){
 
         var row = table.insertRow(0);
         var col1 = row.insertCell(0);
