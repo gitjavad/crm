@@ -93,12 +93,12 @@ set_table_row()
     }
     function disable() {
         var left_arr= document.getElementById('left_sp')
-        if (now_page>1){
+        if (now_page=1){
 
-            left_arr.className.replace(/\b activelb\b/, '');
+            left_arr.className=left_arr.className.replace(/\b activelb\b/, '');
 left_arr.className+=' disabl'
         }else {
-            left_arr.className.replace(/\b disabl\b/, '');
+            left_arr.className=left_arr.className.replace(/\b disabl\b/, '');
 left_arr.className+=' activelb'
         }
     }
@@ -120,11 +120,11 @@ function set_table_row() {
         var db=data_list;
     var right_arr=document.getElementById('right_sp')
     if (now_page>total){
-        right_arr.className.replace(/\b activelb\b/, '')
+        left_arr.className=right_arr.className.replace(/\b activelb\b/, '')
         right_arr.className+=' disabl'
     }
     else {
-    right_arr.className.replace(/\b disabl\b/, '');
+        left_arr.className=right_arr.className.replace(/\b disabl\b/, '');
     right_arr.className+=' activelb'
     }
     disable()
