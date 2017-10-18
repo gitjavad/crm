@@ -122,7 +122,7 @@ function set_table_row(db) {
 }
 
 $('#right_sp').click(function () {
-    alert(hi)
+    alert('hi')
 })
 });
 
