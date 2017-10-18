@@ -98,7 +98,10 @@ function set_table_row(db) {
     var table = document.getElementById('body_list');
 
     tb_p_num=now_page*pge_con;
-    var d;
+    if(db.length<10) {
+        tb_p_num = db.length
+    }
+        var d;
     for (d=0;d<tb_p_num;d++){
 
         var row = table.insertRow(0);
