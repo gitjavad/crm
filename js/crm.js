@@ -35,8 +35,7 @@ var data_list;
                 document.getElementById('body_org').className += 'main_active'
                 frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
-                data_list=data
-              console.log(data_list)
+
                 set_table_row(data);
                 }
             else{
