@@ -5,10 +5,8 @@ $(document).ready(function() {
     $('#input_num').characterCounter();
     $('#modal1').modal();
     $('#input_serch').keydown(function(){
-        $('#s_form').ajaxSubmit({
+        $('#s_form').ajaxForm({
             dataType:'json',
-            url:'/crm/inc/s_list.php',
-            type:'post',
             success: search
             });
         function search(mydata) {
