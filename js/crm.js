@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#input_num').characterCounter();
     $('#modal1').modal();
     $('#input_serch').keydown(function(){
-        $('#s_form').ajaxForm({
+        $('#s_form').ajaxSubmit({
             dataType:'json',
             success: search
             });
