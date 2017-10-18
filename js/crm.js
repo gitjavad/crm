@@ -72,7 +72,7 @@ function pagenav (mydata) {
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
     in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'شماره صفحه: ۱ از '+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
-
+console.log(in_num.innerHTML)
 
 }
 function remove_td() {
