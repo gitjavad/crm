@@ -14,9 +14,10 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $suc = true;
         array_push($request_db,$row);
-        printf(json_encode($request_db));
+
     }
 } else {
     $suc=false;
    
 }
+printf(json_encode($request_db));
