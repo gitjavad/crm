@@ -78,8 +78,9 @@ function pagenav (mydata) {
 }
 function remove_td() {
     var table = document.getElementById('body_list');
-    var table_tr=document.getElementById('body_list tr')
-    table.removeChild(table_tr)
+    table.rows($(this).parents('tr'));
+    table.remove()
+    table.draw();
 }
 function set_table_row(db) {
     var table = document.getElementById('body_list');
