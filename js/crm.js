@@ -8,7 +8,7 @@ var total
 now_page=1
     pge_con=10
     var first_pg=0;
-$('#body_list td').click(function () {
+document.getElementById('body_list td').click(function () {
     var tb=document.getElementById('body_list');
     console.log(tb.rowIndex);
 })
