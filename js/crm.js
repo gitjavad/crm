@@ -55,6 +55,8 @@ var data_list;
     })
     var s_len;
     $('#input_serch').keyup(function(){
+        var table_tr=document.getElementById('body_list tr')
+        table.removeChild(table_tr)
         $('#s_form').ajaxSubmit({
             dataType:'json',
             success: search
@@ -77,8 +79,7 @@ function pagenav (mydata) {
 }
 function set_table_row(db) {
     var table = document.getElementById('body_list');
-    var table_tr=document.getElementById('body_list tr')
-    table.removeChild(table_tr)
+
     var d;
     for (d=0;d<db.length;d++){
 
