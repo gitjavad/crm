@@ -95,11 +95,11 @@ set_table_row()
         var left_arr= document.getElementById('left_sp')
         if (now_page=1){
 
-            left_arr.className.replace(/\b activelb\b/, 'disabl');
-
+            left_arr.className.replace(/\b activelb\b/, '');
+left_arr.className+='disabl'
         }else {
-            left_arr.className.replace(/\b disabl\b/, 'activelb');
-
+            left_arr.className.replace(/\b disabl\b/, '');
+left_arr.className+='activelb'
         }
     }
 function pagenav() {
@@ -120,10 +120,12 @@ function set_table_row() {
         var db=data_list;
     var right_arr=document.getElementById('right_sp')
     if (now_page>total){
-        right_arr.className.replace(/\b activelb\b/, 'disabl')
+        right_arr.className.replace(/\b activelb\b/, '')
+        right_arr.className+='disabl'
     }
     else {
-    right_arr.className.replace(/\b disabl\b/, 'activelb');
+    right_arr.className.replace(/\b disabl\b/, '');
+    right_arr.className+='activelb'
     }
     disable()
     var table = document.getElementById('body_list');
