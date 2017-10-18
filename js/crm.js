@@ -92,10 +92,14 @@ set_table_row()
 
     }
     function disable() {
+        var left_arr= document.getElementById('left_sp')
         if (now_page=1){
-            document.getElementById('left_sp').setAttribute('class','disabl')
+
+            left_arr.className.replace(/\b activelb\b/, 'disabl');
+
         }else {
-            document.getElementById('left_sp').setAttribute('class','activelb')
+            left_arr.className.replace(/\b disabl\b/, 'activelb');
+
         }
     }
 function pagenav() {
@@ -114,8 +118,12 @@ function remove_td() {
 function set_table_row() {
 
         var db=data_list;
+    var right_arr=document.getElementById('right_sp')
     if (now_page>total){
-        document.getElementById('right_sp').setAttribute('class','disabl')
+        right_arr.className.replace(/\b activelb\b/, 'disabl')
+    }
+    else {
+    right_arr.className.replace(/\b disabl\b/, 'activelb');
     }
     disable()
     var table = document.getElementById('body_list');
