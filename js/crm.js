@@ -10,7 +10,7 @@ now_page=1
     var first_pg=0;
     $('#right_sp').click(function () {
        next_page();
-       console
+
     })
     $('body').persiaNumber();
     $('#input_num').characterCounter();
@@ -93,7 +93,7 @@ set_table_row()
     }
     function disable() {
         var left_arr= document.getElementById('left_sp')
-        if (now_page=1){
+        if (now_page>1){
 
             left_arr.className.replace(/\b activelb\b/, '');
 left_arr.className+=' disabl'
