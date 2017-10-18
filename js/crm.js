@@ -55,8 +55,7 @@ var data_list;
     })
     var s_len;
     $('#input_serch').keyup(function(){
-        var table_tr=document.getElementById('body_list tr')
-        table.removeChild(table_tr)
+       remove_td();
         $('#s_form').ajaxSubmit({
             dataType:'json',
             success: search
@@ -76,6 +75,11 @@ function pagenav (mydata) {
     in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'شماره صفحه: ۱ از '+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
 
 
+}
+function remove_td() {
+    var table = document.getElementById('body_list');
+    var table_tr=document.getElementById('body_list tr')
+    table.removeChild(table_tr)
 }
 function set_table_row(db) {
     var table = document.getElementById('body_list');
