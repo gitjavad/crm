@@ -20,7 +20,7 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-main_data=new data
+main_data= data
 
                 var dat_len=data.length;
                     pagenav(dat_len)
@@ -78,7 +78,7 @@ function pagenav (mydata) {
 
 
 }
-function set_table_row(len,_data) {
+function set_table_row(len,my_d) {
     var table = document.getElementById('body_list');
     var d;
     for (d=0;d<len;d++){
@@ -88,11 +88,11 @@ function set_table_row(len,_data) {
         var col3 = row.insertCell(2);
         var col4 = row.insertCell(3);
         var col5 = row.insertCell(4);
-        col1.innerHTML = _data[i].code_product;
-        col2.innerHTML = _data[i].material;
-        col3.innerHTML = _data[i].price_co;
-        col4.innerHTML = _data[i].company;
-        col5.innerHTML = _data[i].des;
+        col1.innerHTML = my_d[i].code_product;
+        col2.innerHTML = my_d[i].material;
+        col3.innerHTML = my_d[i].price_co;
+        col4.innerHTML = my_d[i].company;
+        col5.innerHTML = my_d[i].des;
 
     }
 }
