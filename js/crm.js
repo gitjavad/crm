@@ -63,6 +63,7 @@ data_list=data
     })
     var s_len;
     $('#input_serch').keyup(function(){
+        now_page=1
        remove_td();
         $('#s_form').ajaxSubmit({
             dataType:'json',
@@ -78,6 +79,7 @@ set_table_row()
         }
     });
     function next_page() {
+
         remove_td()
         now_page=now_page+1
         pge_con=now_page*10
