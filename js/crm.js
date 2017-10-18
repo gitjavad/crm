@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     var s_data;
-    var data_serch;
+    var main_data;
 
     $('body').persiaNumber();
     $('#input_num').characterCounter();
@@ -20,7 +20,7 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-
+main_data=data
 
                 var dat_len=data.length;
                     pagenav(dat_len)
@@ -38,7 +38,7 @@ $(document).ready(function() {
                 frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
 
-                set_table_row(data.length,data)
+                set_table_row(main_data.length,main_data)
 
                 }
             else{
@@ -61,8 +61,11 @@ $(document).ready(function() {
             dataType:'json',
             success: search
         });
+
+
         function search(mydata) {
-            set_table_row(mydata.length,mydata)
+            s_data=mydata
+            set_table_row(s_data.length,s_data)
 
         }
     });
