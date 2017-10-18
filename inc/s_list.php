@@ -1,5 +1,5 @@
 <?php
-$s_key=$_GET['key'];
+$s_key=$_POST['key'];
 $hostname="localhost";
 $user = "hirad_admin15023";
 $pass= "9133647736!@#";
