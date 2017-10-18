@@ -4,13 +4,16 @@ $(document).ready(function() {
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
+    var s_len;
     $('#input_serch').keyup(function(){
         $('#s_form').ajaxSubmit({
             dataType:'json',
             success: search
             });
         function search(mydata) {
+            s_len=mydata.length
             console.log(mydata.length)
+
         }
     });
     $(".sub_log").click(function () {
@@ -26,6 +29,7 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
+                my_list_serch(s_len,data)
 
                 var dat_len=data.length;
                     pagenav(dat_len)
@@ -82,6 +86,23 @@ function pagenav (mydata) {
     in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'شماره صفحه: ۱ از '+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
 
 
+}
+function my_list_serch(len,myd) {
+    var d;
+    for (d=0;d<len;d++){
+        var row = table.insertRow(0);
+        var col1 = row.insertCell(0);
+        var col2 = row.insertCell(1);
+        var col3 = row.insertCell(2);
+        var col4 = row.insertCell(3);
+        var col5 = row.insertCell(4);
+        col1.innerHTML = data[i].code_product;
+        col2.innerHTML = data[i].material;
+        col3.innerHTML = data[i].price_co;
+        col4.innerHTML = data[i].company;
+        col5.innerHTML = data[i].des;
+
+    }
 }
 
 });
