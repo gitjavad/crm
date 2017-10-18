@@ -1,9 +1,11 @@
 
 $(document).ready(function() {
 var data_list;
+var pge_con
 var now_page;
 var tb_p_num;
 now_page=1
+    pge_con=10
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
@@ -71,6 +73,7 @@ set_table_row(mydata)
     });
     function next_page() {
         now_page=now_page+1
+        pge_con=pge_con+10
 
 
     }
@@ -82,7 +85,7 @@ function pagenav (mydata) {
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'از'+now_page+'شماره صفحه:'+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
+    in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'از'+now_page+'شماره صفحه:'+"<span class='waves-effect' ><a class=material-icons onclick='"+"next_page()"+"'>chevron_right</a></span>"
 console.log(in_num.innerHTML)
 
 }
@@ -93,10 +96,10 @@ function remove_td() {
 
 function set_table_row(db) {
     var table = document.getElementById('body_list');
-    tb_p_num=db.length/10
-    tb_p_num=tb_p_num*now_page;
+
+    tb_p_num=now_page*pge_con;
     var d;
-    for (d=0;d<db.length;d++){
+    for (d=0;d<tb_p_num;d++){
 
         var row = table.insertRow(0);
         var col1 = row.insertCell(0);
