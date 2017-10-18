@@ -37,7 +37,7 @@ var data_list;
                 main_page.style.cssText = 'display:block';
                 data_list=data
               console.log(data_list)
-                set_table_row();
+                set_table_row(data);
                 }
             else{
                 console.log("ohno mother fuck get out")
@@ -63,7 +63,7 @@ var data_list;
 
         function search(mydata) {
 
-
+set_table_row(mydata)
         }
     });
 function pagenav (mydata) {
@@ -75,21 +75,21 @@ function pagenav (mydata) {
 
 
 }
-function set_table_row() {
+function set_table_row(db) {
     var table = document.getElementById('body_list');
     var d;
-    for (d=0;d<data_list.length;d++){
+    for (d=0;d<db.length;d++){
         var row = table.insertRow(0);
         var col1 = row.insertCell(0);
         var col2 = row.insertCell(1);
         var col3 = row.insertCell(2);
         var col4 = row.insertCell(3);
         var col5 = row.insertCell(4);
-        col1.innerHTML = data_list[i].code_product;
-        col2.innerHTML = data_list[i].material;
-        col3.innerHTML = data_list[i].price_co;
-        col4.innerHTML = data_list[i].company;
-        col5.innerHTML = data_list[i].des;
+        col1.innerHTML = db[d].code_product;
+        col2.innerHTML = db[d].material;
+        col3.innerHTML = db[d].price_co;
+        col4.innerHTML = db[d].company;
+        col5.innerHTML = db[d].des;
 
     }
 }
