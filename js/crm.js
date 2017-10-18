@@ -11,8 +11,8 @@ $(document).ready(function() {
             type:'post',
             success: search
             });
-        function search(data) {
-            console.log(data.length)
+        function search(mydata) {
+            console.log(mydata.length)
         }
     });
     $(".sub_log").click(function () {
