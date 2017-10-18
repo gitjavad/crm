@@ -6,6 +6,9 @@ var now_page;
 var tb_p_num;
 now_page=1
     pge_con=10
+    $('#right_sp').click(function () {
+       console.log("oy")
+    })
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
@@ -120,8 +123,6 @@ function set_table_row(db) {
     }
 }
 
-document.getElementById('right_sp').click(function () {
-    alert('hi')
-})
+
 });
 
