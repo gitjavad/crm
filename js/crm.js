@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-
+var data_list;
 
     $('body').persiaNumber();
     $('#input_num').characterCounter();
@@ -35,8 +35,8 @@ $(document).ready(function() {
                 document.getElementById('body_org').className += 'main_active'
                 frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
-
-              console.log(data)
+                data_list=data
+              console.log(data_list)
 
                 }
             else{
