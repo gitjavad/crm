@@ -6,6 +6,7 @@ var now_page;
 var tb_p_num;
 now_page=1
     pge_con=10
+    var first_pg=0;
     $('#right_sp').click(function () {
        next_page();
        console
@@ -80,6 +81,7 @@ set_table_row()
         remove_td()
         now_page=now_page+1
         pge_con=now_page*10
+        first_pg=first_pg+10
 pagenav()
 set_table_row()
     }
@@ -108,7 +110,7 @@ function set_table_row() {
         tb_p_num = db.length
     }
         var d;
-    for (d=0;d<pge_con;d++){
+    for (d=first_pg;d<pge_con;d++){
 
         var row = table.insertRow(0);
         var col1 = row.insertCell(0);
