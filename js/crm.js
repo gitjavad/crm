@@ -1,21 +1,11 @@
 
 $(document).ready(function() {
     var s_data;
+    var data_serch;
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
-    var s_len;
-    $('#input_serch').keyup(function(){
-        $('#s_form').ajaxSubmit({
-            dataType:'json',
-            success: search
-            });
-        function search(mydata) {
-            s_len=mydata.length
-            console.log(mydata.length)
 
-        }
-    });
     $(".sub_log").click(function () {
         $('#user_frm').ajaxSubmit({
 
@@ -30,7 +20,7 @@ $(document).ready(function() {
             }*/
             if (data[0].message=="true"){
                 my_list_serch(s_len,data)
-
+data_serch =data
                 var dat_len=data.length;
                     pagenav(dat_len)
 
@@ -78,6 +68,31 @@ $(document).ready(function() {
 
 
     })
+    var s_len;
+    $('#input_serch').keyup(function(){
+        $('#s_form').ajaxSubmit({
+            dataType:'json',
+            success: search
+        });
+        function search(mydata) {
+
+            var d;
+            for (d=0;d<mydata.length;d++){
+                var row = table.insertRow(0);
+                var col1 = row.insertCell(0);
+                var col2 = row.insertCell(1);
+                var col3 = row.insertCell(2);
+                var col4 = row.insertCell(3);
+                var col5 = row.insertCell(4);
+                col1.innerHTML = mydata[i].code_product;
+                col2.innerHTML = mydata[i].material;
+                col3.innerHTML = mydata[i].price_co;
+                col4.innerHTML = mydata[i].company;
+                col5.innerHTML = mydata[i].des;
+
+            }
+        }
+    });
 function pagenav (mydata) {
     var b=mydata
     var c=b/10;
@@ -87,23 +102,7 @@ function pagenav (mydata) {
 
 
 }
-function my_list_serch(len,myd) {
-    var d;
-    for (d=0;d<len;d++){
-        var row = table.insertRow(0);
-        var col1 = row.insertCell(0);
-        var col2 = row.insertCell(1);
-        var col3 = row.insertCell(2);
-        var col4 = row.insertCell(3);
-        var col5 = row.insertCell(4);
-        col1.innerHTML = data[i].code_product;
-        col2.innerHTML = data[i].material;
-        col3.innerHTML = data[i].price_co;
-        col4.innerHTML = data[i].company;
-        col5.innerHTML = data[i].des;
 
-    }
-}
 
 });
 
