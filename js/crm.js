@@ -20,7 +20,7 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-main_data=data
+main_data=new data
 
                 var dat_len=data.length;
                     pagenav(dat_len)
