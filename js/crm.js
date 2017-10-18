@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
 var data_list;
-var data_len;
 
     $('body').persiaNumber();
     $('#input_num').characterCounter();
@@ -66,21 +65,17 @@ var data_len;
         function search(mydata) {
 
 set_table_row(mydata)
-
-
-
         }
     });
-function pagenav (my_data) {
-    var b=my_data
+function pagenav (mydata) {
+    var b=mydata
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
     in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'شماره صفحه: ۱ از '+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
 
-console.log(in_num.innerHTML)
-}
 
+}
 function remove_td() {
     var table_td = document.getElementById('body_list');
     table_td.innerHTML=""
@@ -105,7 +100,6 @@ function set_table_row(db) {
 
     }
 }
-
 
 
 });
