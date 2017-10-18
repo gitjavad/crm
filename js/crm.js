@@ -4,6 +4,7 @@ var data_list;
 var pge_con
 var now_page;
 var tb_p_num;
+var total
 now_page=1
     pge_con=10
     var first_pg=0;
@@ -79,7 +80,7 @@ set_table_row()
         }
     });
     function next_page() {
-
+        $('body').persiaNumber();
         remove_td()
         now_page=now_page+1
         pge_con=now_page*10
@@ -90,12 +91,19 @@ set_table_row()
     function prev_page() {
 
     }
+    function disable() {
+        if (now_page=1){
+            document.getElementById('left_sp').setAttribute('class','disabl')
+        }else {
+            document.getElementById('left_sp').setAttribute('class','active')
+        }
+    }
 function pagenav() {
-    var b=data_list.length
-    var c=b/10;
-    c=Math.ceil(c)
+    total=data_list.length
+    total=total/10;
+    total=Math.ceil(total)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML=now_page+" از "+c
+    in_num.innerHTML=now_page+" از "+total
 
 }
 function remove_td() {
@@ -104,7 +112,12 @@ function remove_td() {
 }
 
 function set_table_row() {
+
         var db=data_list;
+    if (now_page>total){
+        document.getElementById('right_sp').setAttribute('class','disabl')
+    }
+    disable()
     var table = document.getElementById('body_list');
 
 

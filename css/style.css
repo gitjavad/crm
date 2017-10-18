@@ -103,3 +103,14 @@ form{
 #input_num{
     width: 20px;
 }
+.active{
+    color: black;
+    border: 1px solid;
+    margin-left: 10px;
+}
+.disabl{
+    color: darkgray;
+    border: 1px solid;
+    margin-right: 10px;
+    cursor: not-allowed;
+}
