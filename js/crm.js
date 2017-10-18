@@ -68,7 +68,7 @@ now_page=1
         function search(mydata) {
 
 set_table_row(mydata)
-            pagenav(mydata)
+            pagenav(mydata.length)
         }
     });
     function next_page() {
