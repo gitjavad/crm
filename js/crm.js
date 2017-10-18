@@ -85,7 +85,7 @@ function pagenav (mydata) {
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML=c+"از"+now_page
+    in_num.innerHTML=now_page+" از "+c
 
 }
 function remove_td() {
