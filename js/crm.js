@@ -85,8 +85,7 @@ function pagenav (mydata) {
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'از'+now_page+'شماره صفحه:'+"<span class='waves-effect' id='right_sp' ><a class=material-icons >chevron_right</a></span>"
-console.log(in_num.innerHTML)
+    in_num.innerHTML=c+"از"+now_page
 
 }
 function remove_td() {
