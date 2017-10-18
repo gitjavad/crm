@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
 var data_list;
-
+var now_page;
+var tb_p_num;
+now_page=1
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
@@ -64,14 +66,23 @@ var data_list;
         function search(mydata) {
 
 set_table_row(mydata)
+            pagenav(mydata)
         }
     });
+    function next_page() {
+        now_page=now_page+1
+
+
+    }
+    function prev_page() {
+
+    }
 function pagenav (mydata) {
     var b=mydata
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'شماره صفحه: ۱ از '+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
+    in_num.innerHTML="<span class='disabled' ><a class=material-icons>chevron_left</a></span>"+c+'از'+now_page+'شماره صفحه:'+"<span class='waves-effect' ><a class=material-icons>chevron_right</a></span>"
 console.log(in_num.innerHTML)
 
 }
@@ -79,9 +90,11 @@ function remove_td() {
     var table_td = document.getElementById('body_list');
     table_td.innerHTML=""
 }
+
 function set_table_row(db) {
     var table = document.getElementById('body_list');
-
+    tb_p_num=db.length/10
+    tb_p_num=tb_p_num*now_page;
     var d;
     for (d=0;d<db.length;d++){
 
