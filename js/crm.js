@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
-    var s_data;
-    var main_data;
+
 
     $('body').persiaNumber();
     $('#input_num').characterCounter();
@@ -20,7 +19,6 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-main_data= new data
 
                 var dat_len=data.length;
                     pagenav(dat_len)
@@ -38,7 +36,7 @@ main_data= new data
                 frm_login.style.cssText='display:none'
                 main_page.style.cssText = 'display:block';
 
-                set_table_row(main_data.length,main_data)
+              console.log(data)
 
                 }
             else{
@@ -64,8 +62,7 @@ main_data= new data
 
 
         function search(mydata) {
-            s_data= new mydata
-            set_table_row(s_data.length,s_data)
+
 
         }
     });
@@ -78,7 +75,7 @@ function pagenav (mydata) {
 
 
 }
-function set_table_row(len,my_d) {
+function set_table_row() {
     var table = document.getElementById('body_list');
     var d;
     for (d=0;d<len;d++){
