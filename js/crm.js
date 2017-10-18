@@ -110,11 +110,13 @@ function set_table_row(db) {
         var col3 = row.insertCell(2);
         var col4 = row.insertCell(3);
         var col5 = row.insertCell(4);
+        var col6 = row.insertCell(5);
         col1.innerHTML = db[d].code_product;
-        col2.innerHTML = db[d].material;
-        col3.innerHTML = db[d].price_co;
-        col4.innerHTML = db[d].company;
-        col5.innerHTML = db[d].des;
+        col2.innerHTML = db[d].name;
+        col3.innerHTML = db[d].material;
+        col4.innerHTML = db[d].price_co;
+        col5.innerHTML = db[d].company;
+        col6.innerHTML = db[d].des;
 
     }
 }

@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
 }
 
 if ($suc) {
-    $sql = "SELECT code_product, material, price_co, price_custom, company, des FROM crm";
+    $sql = "SELECT code_product, material, price_co, price_custom, company, des, name FROM crm";
     $result = $conn->query($sql);
 
 
