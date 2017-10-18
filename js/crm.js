@@ -121,8 +121,8 @@ function set_table_row(db) {
     }
 }
 
-document.getElementById('right_sp').on('click',(function () {
+document.getElementById('right_sp').click(function () {
     alert('hi')
-}))
+})
 });
 
