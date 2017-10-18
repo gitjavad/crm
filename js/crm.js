@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('#input_serch').ajaxSubmit({
             dataType:'json',
             url:'/crm/inc/s_list.php',
-            type:'post',
+            type:'get',
             success: search
             });
         function search(mydata) {
