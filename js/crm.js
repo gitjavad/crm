@@ -77,8 +77,11 @@ function pagenav (mydata) {
 }
 function set_table_row(db) {
     var table = document.getElementById('body_list');
+    var table_tr=document.getElementById('body_list tr')
+    table.removeChild(table_tr)
     var d;
     for (d=0;d<db.length;d++){
+
         var row = table.insertRow(0);
         var col1 = row.insertCell(0);
         var col2 = row.insertCell(1);
