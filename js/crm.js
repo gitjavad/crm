@@ -91,7 +91,7 @@ set_table_row()
     function prev_page() {
 
     }
-    function disable() {
+    /*function disable() {
         var left_arr= document.getElementById('left_sp')
         if (now_page=1){
 
@@ -101,7 +101,7 @@ left_arr.className+=' disabl'
             left_arr.className=left_arr.className.replace(/\b disabl\b/, '');
 left_arr.className+=' activelb'
         }
-    }
+    }*/
 function pagenav() {
     total=data_list.length
     total=total/10;
@@ -118,7 +118,7 @@ function remove_td() {
 function set_table_row() {
 
         var db=data_list;
-    var right_arr=document.getElementById('right_sp')
+   /* var right_arr=document.getElementById('right_sp')
     if (now_page>total){
         right_arr.className=right_arr.className.replace(/\b activelb\b/, '')
         right_arr.className+=' disabl'
@@ -127,7 +127,7 @@ function set_table_row() {
         right_arr.className=right_arr.className.replace(/\b disabl\b/, '');
     right_arr.className+=' activelb'
     }
-    disable()
+    disable();*/
     var table = document.getElementById('body_list');
 
 
