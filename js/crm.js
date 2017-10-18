@@ -20,8 +20,8 @@ $(document).ready(function() {
                 console.log(data[i].code_product);
             }*/
             if (data[0].message=="true"){
-                my_list_serch(s_len,data)
-data_serch =data
+
+
                 var dat_len=data.length;
                     pagenav(dat_len)
 
