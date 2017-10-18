@@ -29,7 +29,7 @@ now_page=1
             if (data[0].message=="true"){
 data_list=data
                 var dat_len=data.length;
-                    pagenav(dat_len)
+                    pagenav()
 
 
 
@@ -73,20 +73,21 @@ data_list=data
             data_list=mydata
 
 set_table_row()
-            pagenav(mydata.length)
+            pagenav()
         }
     });
     function next_page() {
+        remove_td()
         now_page=now_page+1
         pge_con=now_page*10
-
+pagenav()
 set_table_row()
     }
     function prev_page() {
 
     }
-function pagenav (mydata) {
-    var b=mydata
+function pagenav() {
+    var b=data_list.length
     var c=b/10;
     c=Math.ceil(c)
     var in_num=document.getElementById('input_num');
