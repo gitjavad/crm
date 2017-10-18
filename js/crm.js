@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('body').persiaNumber();
     $('#input_num').characterCounter();
     $('#modal1').modal();
-    $('#input_serch').keydown(function(){
+    $('#input_serch').onkeyup(function(){
         $('#s_form').ajaxSubmit({
             dataType:'json',
             success: search
