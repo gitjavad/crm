@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
     });
     $(".sub_log").click(function () {
-        $('form').ajaxSubmit({
+        $('#user_frm').ajaxSubmit({
 
             dataType: 'json',
             success: processJson
