@@ -103,7 +103,7 @@ form{
 #input_num{
     width: 20px;
 }
-.active{
+.activelb{
     color: black;
     border: 1px solid;
     margin-left: 10px;

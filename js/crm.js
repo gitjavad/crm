@@ -95,7 +95,7 @@ set_table_row()
         if (now_page=1){
             document.getElementById('left_sp').setAttribute('class','disabl')
         }else {
-            document.getElementById('left_sp').setAttribute('class','active')
+            document.getElementById('left_sp').setAttribute('class','activelb')
         }
     }
 function pagenav() {
