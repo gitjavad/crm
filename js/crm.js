@@ -77,12 +77,12 @@ function pagenav (mydata) {
 
 }
 function remove_td() {
-    var table_td = document.getElementById('body_list td');
-    table_td.remove();
+    var table_td = document.getElementById('body_list');
+    table_td.deleteRow();
 }
 function set_table_row(db) {
     var table = document.getElementById('body_list');
-
+table.innerHTML=""
     var d;
     for (d=0;d<db.length;d++){
 
