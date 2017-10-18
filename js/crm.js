@@ -120,11 +120,11 @@ function set_table_row() {
         var db=data_list;
     var right_arr=document.getElementById('right_sp')
     if (now_page>total){
-        left_arr.className=right_arr.className.replace(/\b activelb\b/, '')
+        right_arr.className=right_arr.className.replace(/\b activelb\b/, '')
         right_arr.className+=' disabl'
     }
     else {
-        left_arr.className=right_arr.className.replace(/\b disabl\b/, '');
+        right_arr.className=right_arr.className.replace(/\b disabl\b/, '');
     right_arr.className+=' activelb'
     }
     disable()
