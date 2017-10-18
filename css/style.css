@@ -88,6 +88,7 @@ thead{
 }
 table{
     direction: rtl !important;
+    table-layout: fixed;
 }
 form{
     direction: rtl !important;
