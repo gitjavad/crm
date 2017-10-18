@@ -113,9 +113,9 @@ function set_table_row(db) {
         var col6 = row.insertCell(5);
         col1.innerHTML = db[d].code_product;
         col2.innerHTML = db[d].name;
-        col3.innerHTML = db[d].material;
+        col3.innerHTML = db[d].company;
         col4.innerHTML = db[d].price_co;
-        col5.innerHTML = db[d].company;
+        col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
 
     }
