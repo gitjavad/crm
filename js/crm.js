@@ -7,7 +7,7 @@ var tb_p_num;
 now_page=1
     pge_con=10
     $('#right_sp').click(function () {
-       console.log("oy")
+       next_page()
     })
     $('body').persiaNumber();
     $('#input_num').characterCounter();
