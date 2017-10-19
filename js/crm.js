@@ -87,8 +87,8 @@ set_table_row()
     function next_page() {
         $('body').persiaNumber();
         remove_td()
-        now_page=now_page+1
-        now_page=now_page*10
+
+        now_page=now_page+10
         pge_con=now_page+1
         first_pg=first_pg+10
         page_counter=page_counter+1
