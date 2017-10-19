@@ -9,6 +9,8 @@ var total
 now_page=1
     pge_con=0
     var first_pg=10;
+    var row_index;
+    var col_index
     var table = document.getElementById('body_list');
     $('#right_sp').click(function () {
        next_page();
@@ -159,9 +161,9 @@ console.log(d)
     }
 }
 $('#body_list').on('click','td',function () {
-    var row_index = $(this).closest("tr").index();
-    var col_index = $(this).index();
-    console.log(row_index)
+    row_index = $(this).closest("tr").index();
+    col_index = $(this).index();
+    console.log(col_index)
     document.getElementById('frm_edit'+row_index).style.cssText='display:block'
     myinput_eidt =   document.getElementById('input_edit'+row_index)
 
@@ -169,12 +171,47 @@ $('#body_list').on('click','td',function () {
 })
 
 
-    $('#body_list').on('keypress','input',function (event) {
+  /*  $('#body_list').on('keypress','input',function (event) {
         if ( event.which == 13 ) {
             event.preventDefault();
-            console.log("enter key")
+
+
+                var formData = {
+                    'text': $('input[name=text_edit]').val(),
+                    'id': row_index+now_page ,
+                    'col': col_index
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: 'contact.php',
+                    data: formData,
+                    dataType: 'json',
+                    encode: true
+                }).done(function (data) {
+                    console.log(data);
+
+                    if (!data.success) {
+
+                        NProgress.done();
+                        $('.con-in').removeClass('my-contact-load');
+                        $('#my-send-message').removeClass('btn-danger');
+                        $('#my-send-message').addClass('btn-warning');
+
+                        $('#my-send-message').html("<p id='my-msg-status'>پیام ارسال نشد مجددا تلاش کنید</p>");
+                    } else {
+                        NProgress.done();
+                        $('.con-in').removeClass('my-contact-load');
+                        $('#my-send-message').removeClass('btn-danger');
+                        $('#my-send-message').removeClass('btn-warning');
+                        $('#my-send-message').addClass('btn-success');
+
+                        $('#my-send-message').html("<p id='my-msg-status'>پیام شما ارسال گردید</p>");
+
+                    }
+
+            });
         }
-    });
+    });*/
 
 
 });
