@@ -6,6 +6,7 @@ var now_page;
 var tb_p_num;
 var total
     var col1
+    var page_counter=1
 now_page=0
     pge_con=1
     var first_pg=10;
@@ -112,7 +113,7 @@ function pagenav() {
     total=total/10;
     total=Math.ceil(total)
     var in_num=document.getElementById('input_num');
-    in_num.innerHTML=now_page+" از "+total
+    in_num.innerHTML=page_counter+" از "+total
 
 }
 function remove_td() {
