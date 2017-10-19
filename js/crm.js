@@ -198,7 +198,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                        document.getElementById('frm_edit').fadeOut()
+                        $(this).className='animated fadeOut'
 
 
                     }
