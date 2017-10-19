@@ -181,7 +181,7 @@ row_index=row_index+1
             event.preventDefault();
 
 
-            console.log(mi_in)
+
                 var formData = {
                     'text': $(this).val(),
                     'id': row_index ,
