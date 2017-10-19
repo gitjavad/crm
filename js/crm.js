@@ -180,7 +180,7 @@ row_index=row_index+1
         if ( event.which == 13 ) {
             event.preventDefault();
 
-var mi_in=$(this)
+
             console.log(mi_in)
                 var formData = {
                     'text': $(this).val(),
@@ -199,7 +199,8 @@ var mi_in=$(this)
 console.log('ok')
 
                     } else {
-console.log(mi_in.id)
+
+console.log( $('input#body_list').className)
                     }
 
             });
