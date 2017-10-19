@@ -157,7 +157,7 @@ function set_table_row() {
 
     }
 }
-
+console.log(adc)
 
 
 });
