@@ -7,8 +7,8 @@ var tb_p_num;
 var total
     var col1
 now_page=1
-    pge_con=10
-    var first_pg=0;
+    pge_con=0
+    var first_pg=10;
     var table = document.getElementById('body_list');
     $('#right_sp').click(function () {
        next_page();
@@ -138,7 +138,7 @@ function set_table_row() {
     }
         var d;
     console.log(pge_con)
-    for (d=first_pg;d<pge_con;d++){
+    for (d=first_pg;d<pge_con;d--){
 
         var row = table.insertRow(0);
          col1 = row.insertCell(0);
