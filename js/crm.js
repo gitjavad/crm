@@ -162,8 +162,8 @@ $('#body_list').on('click','td',function () {
     var row_index = $(this).closest("tr").index();
     var col_index = $(this).index();
     console.log(row_index)
-    /*document.getElementById('frm_edit'+row_index).style.cssText='display:block'
-*/
+    document.getElementById('frm_edit'+row_index).style.cssText='display:block'
+
 })
 
 });
