@@ -159,10 +159,9 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
     }
 }
-    col1.onclick=mr();
-function mr() {
+    col1.onclick(function() {
 console.log("hi")
-};
+});
 });
 
 
