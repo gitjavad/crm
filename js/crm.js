@@ -91,6 +91,7 @@ set_table_row()
         now_page=now_page*10
         pge_con=now_page+1
         first_pg=first_pg+10
+        page_counter=page_counter+1
 pagenav()
 set_table_row()
     }
