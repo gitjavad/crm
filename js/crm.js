@@ -1,5 +1,5 @@
 
-(document).load(function() {
+(document).ready(function() {
 var data_list;
 var pge_con
 var now_page;
@@ -158,7 +158,10 @@ col1.innerHTML+='<form class="frm_edit"><input type="text"></input></form>'
     }
 }
 
-console.log("hi")
+    document.addEventListener("DOMContentLoaded", function(event) {
+        console.log("DOM fully loaded and parsed");
+    });
+
 
 });
 
