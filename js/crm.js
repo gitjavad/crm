@@ -158,7 +158,7 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-        col1.innerHTML+='<form id="frm_edit'+d+ '"style="display: none"><input class="" id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
+        col1.innerHTML+='<form class="frm_ed" id="frm_edit'+d+ '"style="display: none"><input class="i" id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
 
 
 
@@ -199,7 +199,7 @@ console.log('ok')
 
                     } else {
 
-                        $('#body_list input').className+="hi";
+                        $('.frm_ed input').className+="hi";
 
                     }
 
