@@ -7,7 +7,7 @@ var tb_p_num;
 var total
     var col1
 now_page=1
-    pge_con=0
+    pge_con=1
     var first_pg=10;
     var row_index;
     var col_index
@@ -139,7 +139,7 @@ function set_table_row() {
         tb_p_num = db.length
     }
         var d;
-    for (d=first_pg-1;d>=pge_con;d--){
+    for (d=first_pg;d>=pge_con;d--){
 
         var row = table.insertRow(0);
          col1 = row.insertCell(0);
