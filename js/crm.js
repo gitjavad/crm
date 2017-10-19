@@ -199,7 +199,7 @@ console.log('ok')
 
                     } else {
 
-myinput_eidt.className="animated fadeOut"
+myinput_eidt.className += "animated fadeOut"
 
                     }
 
