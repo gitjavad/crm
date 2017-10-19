@@ -6,7 +6,7 @@ var now_page;
 var tb_p_num;
 var total
     var col1
-now_page=1
+now_page=0
     pge_con=1
     var first_pg=10;
     var row_index;
@@ -87,7 +87,8 @@ set_table_row()
         $('body').persiaNumber();
         remove_td()
         now_page=now_page+1
-        pge_con=now_page*10
+        now_page=now_page*10
+        pge_con=now_page+1
         first_pg=first_pg+10
 pagenav()
 set_table_row()
@@ -164,6 +165,7 @@ $('#body_list').on('click','td',function () {
     row_index = $(this).closest("tr").index();
     col_index = $(this).index();
 row_index=row_index+1
+    row_index=now_page+row_index
     document.getElementById('frm_edit'+row_index).style.cssText='display:block'
     myinput_eidt =   document.getElementById('input_edit'+row_index+1)
     console.log(row_index)
