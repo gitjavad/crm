@@ -199,7 +199,7 @@ var mi_in=$(this)
 console.log('ok')
 
                     } else {
-mi_in.style.cssText='display:none'
+console.log(mi_in.id)
                     }
 
             });
