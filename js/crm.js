@@ -9,7 +9,7 @@ var total
 now_page=1
     pge_con=10
     var first_pg=0;
-
+    var table = document.getElementById('body_list');
     $('#right_sp').click(function () {
        next_page();
 
@@ -130,7 +130,7 @@ function set_table_row() {
     right_arr.className+=' activelb'
     }
     disable();*/
-    var table = document.getElementById('body_list');
+
 
 
     if(db.length<10) {
@@ -160,7 +160,7 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
     }
 }
 $('#body_list').on('click','td',function () {
-    console.log("hi")
+    console.log(table.rowIndex)
 })
 
 });
