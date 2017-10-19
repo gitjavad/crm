@@ -159,9 +159,10 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
     }
 }
-    document.getElementById('body_list').on('click','td',function () {
-        console.log("hi")
-    });
+$('#body_list').on('click','td',function () {
+    console.log("hi")
+})
+
 });
 
 
