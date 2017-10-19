@@ -152,7 +152,7 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-        col1.setAttribute('onclick','td_run')
+        col1.setAttribute('onclick','td_run()')
 
     }
 }
