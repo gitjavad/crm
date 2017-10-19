@@ -158,11 +158,10 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
     }
 }
 
-
+document.getElementById('body_list').on('click', 'td', function () {
+   console.log("hi")
+});
 
 });
-window.addEventListener('DOMContentLoaded', function() {
-    console.log('window - DOMContentLoaded - capture'); // 1st
-    document.getElementById('frm_edit').style.cssText="display:none"
-}, true);
+
 
