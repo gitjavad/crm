@@ -153,7 +153,7 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-col1.innerHTML+='<form id="frm_edit" style="display: none"><input type="text"></input></form>'
+col1.innerHTML+='<form class="frm_edit" style="display: none"><input type="text"></input></form>'
 
 
 
@@ -163,7 +163,7 @@ $('#body_list').on('click','td',function () {
     var row_index = $(this).closest("tr").index();
     var col_index = $(this).index();
     console.log(row_index)
-    document.getElementById('frm_edit').style.cssText='display:block';
+    $('.frm_edit').style.cssText='display:block'
 })
 
 });
