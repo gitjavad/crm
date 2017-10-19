@@ -163,8 +163,19 @@ $('#body_list').on('click','td',function () {
     var col_index = $(this).index();
     console.log(row_index)
     document.getElementById('frm_edit'+row_index).style.cssText='display:block'
+    myinput_eidt =   document.getElementById('input_edit'+row_index)
+
 
 })
+
+
+    $('#body_list').on('keypress','input',function (event) {
+        if ( event.which == 13 ) {
+            event.preventDefault();
+            console.log("enter key")
+        }
+    });
+
 
 });
 
