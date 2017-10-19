@@ -160,9 +160,10 @@ function set_table_row() {
         col6.className="td_list"
     }
 }
-    $('.td_list').click(function () {
-        console.log("hi")
-    })
+    function td_run() {
+        console.log("salam");
+    }
+
 
 });
 
