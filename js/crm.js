@@ -200,7 +200,7 @@ console.log('ok')
 
                     } else {
 
-console.log( $('input#body_list').className)
+console.log( $('#input_edit2').className)
                     }
 
             });
