@@ -198,7 +198,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                        $(this).setAttribute('className','animated fadeOut')
+                        myinput_eidt.setAttribute('className','animated fadeOut')
 
 
                     }
