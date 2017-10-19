@@ -199,7 +199,9 @@ console.log('ok')
 
                     } else {
 
-myinput_eidt.setAttribute('class','animated fadeOut')
+                        document.addEventListener("DOMContentLoaded", function(event) {
+                            console.log("DOM fully loaded and parsed");
+                        });
 
                     }
 
