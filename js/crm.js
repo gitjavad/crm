@@ -178,7 +178,7 @@ row_index=row_index+1
 
                 var formData = {
                     'text': $(this).val(),
-                    'id': row_index+now_page ,
+                    'id': row_index ,
                     'col': col_index
                 };
                 $.ajax({
