@@ -161,4 +161,7 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
 
 });
+window.addEventListener('DOMContentLoaded', function() {
+    console.log('window - DOMContentLoaded - capture'); // 1st
+}, true);
 
