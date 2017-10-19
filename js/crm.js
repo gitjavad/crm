@@ -171,7 +171,7 @@ $('#body_list').on('click','td',function () {
 })
 
 
-  /*  $('#body_list').on('keypress','input',function (event) {
+   $('#body_list').on('keypress','input',function (event) {
         if ( event.which == 13 ) {
             event.preventDefault();
 
@@ -183,7 +183,7 @@ $('#body_list').on('click','td',function () {
                 };
                 $.ajax({
                     type: 'POST',
-                    url: 'contact.php',
+                    url: 'inc/update.php',
                     data: formData,
                     dataType: 'json',
                     encode: true
@@ -191,27 +191,16 @@ $('#body_list').on('click','td',function () {
                     console.log(data);
 
                     if (!data.success) {
+console.log('error')
 
-                        NProgress.done();
-                        $('.con-in').removeClass('my-contact-load');
-                        $('#my-send-message').removeClass('btn-danger');
-                        $('#my-send-message').addClass('btn-warning');
-
-                        $('#my-send-message').html("<p id='my-msg-status'>پیام ارسال نشد مجددا تلاش کنید</p>");
                     } else {
-                        NProgress.done();
-                        $('.con-in').removeClass('my-contact-load');
-                        $('#my-send-message').removeClass('btn-danger');
-                        $('#my-send-message').removeClass('btn-warning');
-                        $('#my-send-message').addClass('btn-success');
-
-                        $('#my-send-message').html("<p id='my-msg-status'>پیام شما ارسال گردید</p>");
+                        console.log('ok')
 
                     }
 
             });
         }
-    });*/
+    });
 
 
 });
