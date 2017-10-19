@@ -167,7 +167,7 @@ $('#body_list').on('click','td',function () {
     document.getElementById('frm_edit'+row_index).style.cssText='display:block'
     myinput_eidt =   document.getElementById('input_edit'+row_index)
 
-
+console.log(myinput_eidt.val())
 })
 
 
