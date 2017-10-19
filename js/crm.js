@@ -198,7 +198,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                        myinput_eidt.setAttribute('className','animated fadeOut')
+                       $(this).fadeOut(500);
 
 
                     }
