@@ -163,8 +163,8 @@ console.log(d)
 $('#body_list').on('click','td',function () {
     row_index = $(this).closest("tr").index();
     col_index = $(this).index();
-
-    document.getElementById('frm_edit'+row_index+1).style.cssText='display:block'
+row_index=row_index+1
+    document.getElementById('frm_edit'+row_index).style.cssText='display:block'
     myinput_eidt =   document.getElementById('input_edit'+row_index+1)
     console.log(row_index+now_page)
 
