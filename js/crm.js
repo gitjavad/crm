@@ -153,13 +153,13 @@ function set_table_row() {
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
 col1.innerHTML+='<form class="frm_edit"><input type="text"></input></form>'
-        row.setAttribute('onclick','my_db()')
+
 
     }
 }
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        console.log("DOM fully loaded and parsed");
+        document.getElementById('frm_edit').style.cssText="display:none"
     });
 
 
