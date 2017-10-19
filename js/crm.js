@@ -195,11 +195,11 @@ row_index=row_index+1
                 }).done(function (data) {
                     console.log(data);
 
-                    if (!data.success) {
-console.log('error')
+                    if (data.success) {
+console.log('ok')
 
                     } else {
-                        console.log('ok')
+                        console.log('error')
 
                     }
 
