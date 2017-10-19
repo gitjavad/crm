@@ -180,7 +180,8 @@ row_index=row_index+1
         if ( event.which == 13 ) {
             event.preventDefault();
 
-
+var mi_in=$(this).className
+            console.log(mi_in)
                 var formData = {
                     'text': $(this).val(),
                     'id': row_index ,
@@ -198,8 +199,6 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-
-                        $('.i').className+="hi";
 
                     }
 
