@@ -159,8 +159,10 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
     }
 }
-$('#body_list').on('click','tr',function () {
-    console.log($(this).rowIndex)
+$('#body_list').on('click','td',function () {
+    var row_index = $(this).closest("tr").index();
+    var col_index = $(this).index();
+    console.log(row_index)
 })
 
 });
