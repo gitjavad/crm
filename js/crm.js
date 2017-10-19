@@ -160,7 +160,7 @@ function set_table_row() {
         col1.innerHTML+='<form id="frm_edit'+d+ '"style="display: none"><input id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
 
 
-console.log(d)
+console.log(first_pg)
     }
 }
 $('#body_list').on('click','td',function () {
