@@ -1,5 +1,5 @@
 
-jQuery(document).ready(function($) {
+(document).load(function() {
 var data_list;
 var pge_con
 var now_page;
@@ -158,7 +158,7 @@ col1.innerHTML+='<form class="frm_edit"><input type="text"></input></form>'
     }
 }
 
-
+console.log("hi")
 
 });
 
