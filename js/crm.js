@@ -199,7 +199,7 @@ var mi_in=$(this)
 console.log('ok')
 
                     } else {
-mi_in.htmlText='k'
+mi_in.style.cssText='display:none'
                     }
 
             });
