@@ -154,7 +154,7 @@ function set_table_row() {
         col6.innerHTML = db[d].des;
         col1.innerHTML+='<form id="frm_edit'+d+ '"style="display: none"><input type="text"></input></form>'
 
-            console.log(d)
+
 
     }
 }
@@ -162,7 +162,8 @@ $('#body_list').on('click','td',function () {
     var row_index = $(this).closest("tr").index();
     var col_index = $(this).index();
     console.log(row_index)
-    document.getElementById('frm_edit'+row_index).style.cssText='display:block'
+    /*document.getElementById('frm_edit'+row_index).style.cssText='display:block'
+*/
 })
 
 });
