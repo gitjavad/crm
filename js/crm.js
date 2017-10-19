@@ -199,9 +199,7 @@ console.log('ok')
 
                     } else {
 
-                        document.addEventListener("DOMContentLoaded", function(event) {
-                            console.log("DOM fully loaded and parsed");
-                        });
+                        $('#body_list input').className+="hi";
 
                     }
 
