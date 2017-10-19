@@ -174,7 +174,7 @@ $('#body_list').on('click','td',function () {
    $('#body_list').on('keypress','input',function (event) {
         if ( event.which == 13 ) {
             event.preventDefault();
-console.log($(this).val())
+console.log(row_index+now_page)
 
                 var formData = {
                     'text': $(this).val(),
