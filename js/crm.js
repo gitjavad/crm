@@ -167,17 +167,17 @@ $('#body_list').on('click','td',function () {
     document.getElementById('frm_edit'+row_index).style.cssText='display:block'
     myinput_eidt =   document.getElementById('input_edit'+row_index)
 
-console.log(myinput_eidt.textContent())
+
 })
 
 
    $('#body_list').on('keypress','input',function (event) {
         if ( event.which == 13 ) {
             event.preventDefault();
-
+console.log($(this).val())
 
                 var formData = {
-                    'text': myinput_eidt.val(),
+                    'text': $(this).val(),
                     'id': row_index+now_page ,
                     'col': col_index
                 };
