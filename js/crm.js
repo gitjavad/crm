@@ -8,7 +8,7 @@ var total
 now_page=1
     pge_con=10
     var first_pg=0;
-    $("tr#body_list td").click(function(e){     //function_td
+    $("body_list tr").onclick(function(e){     //function_td
         console.log("hi")
         e.stopPropagation();
     });
