@@ -163,6 +163,7 @@ $('#body_list').on('click','td',function () {
     var row_index = $(this).closest("tr").index();
     var col_index = $(this).index();
     console.log(row_index)
+    $('#frm_edit').style.cssText='dispaly:block';
 })
 
 });
