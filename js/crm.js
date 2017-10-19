@@ -8,7 +8,9 @@ var total
 now_page=1
     pge_con=10
     var first_pg=0;
-
+    $( "#body_list td" ).on( "click", function() {
+        console.log( $( this ).text() );
+    });
     $('#right_sp').click(function () {
        next_page();
 
