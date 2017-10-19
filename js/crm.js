@@ -142,6 +142,7 @@ function set_table_row() {
         tb_p_num = db.length
     }
         var d;
+    console.log(first_pg)
     for (d=first_pg;d>=pge_con;d--){
 
         var row = table.insertRow(0);
@@ -160,7 +161,7 @@ function set_table_row() {
         col1.innerHTML+='<form id="frm_edit'+d+ '"style="display: none"><input id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
 
 
-console.log(first_pg)
+
     }
 }
 $('#body_list').on('click','td',function () {
