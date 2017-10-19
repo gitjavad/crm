@@ -155,7 +155,7 @@ function set_table_row() {
 
     }
 }
-    document.getElementById('body_list ').addEventListener('click',function () {
+    $('td#body_list').click(function (ev) {
         console.log("hi")
     })
 
