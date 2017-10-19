@@ -177,7 +177,7 @@ $('#body_list').on('click','td',function () {
 
 
                 var formData = {
-                    'text': $('input[name=text_edit]').val(),
+                    'text': myinput_eidt.val(),
                     'id': row_index+now_page ,
                     'col': col_index
                 };
