@@ -157,10 +157,7 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
     }
 }
-
-    document.addEventListener("DOMContentLoaded", function(event) {
-        document.getElementById('frm_edit').style.cssText="display:none"
-    });
+    document.getElementById('frm_edit').style.cssText="display:none"
 
 
 });
