@@ -160,7 +160,7 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
     }
 }
 $('#body_list').on('click','td',function () {
-    console.log($(this).parent().rowIndex)
+    console.log($(this).parent().index)
 })
 
 });
