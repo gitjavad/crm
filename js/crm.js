@@ -8,10 +8,7 @@ var total
 now_page=1
     pge_con=10
     var first_pg=0;
-    $("body_list td").click(function(e){     //function_td
-        console.log("hi")
-        e.stopPropagation();
-    });
+
     $('#right_sp').click(function () {
        next_page();
 
@@ -158,7 +155,9 @@ function set_table_row() {
 
     }
 }
-
+    $("body_list td").addEventListener('click',function () {
+        console.log("hi")
+    })
 
 });
 
