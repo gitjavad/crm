@@ -142,7 +142,7 @@ function set_table_row() {
         tb_p_num = db.length
     }
         var d;
-    console.log(first_pg)
+    console.log(pge_con)
     for (d=first_pg;d>=pge_con;d--){
 
         var row = table.insertRow(0);
