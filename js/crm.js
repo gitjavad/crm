@@ -5,6 +5,7 @@ var pge_con
 var now_page;
 var tb_p_num;
 var total
+    var col1
 now_page=1
     pge_con=10
     var first_pg=0;
@@ -140,7 +141,7 @@ function set_table_row() {
     for (d=first_pg;d<pge_con;d++){
 
         var row = table.insertRow(0);
-        var col1 = row.insertCell(0);
+         col1 = row.insertCell(0);
         var col2 = row.insertCell(1);
         var col3 = row.insertCell(2);
         var col4 = row.insertCell(3);
@@ -154,11 +155,11 @@ function set_table_row() {
         col6.innerHTML = db[d].des;
 col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
-        col1.onclick=mr();
+
 
     }
 }
-
+    col1.onclick=mr();
 function mr() {
 console.log("hi")
 };
