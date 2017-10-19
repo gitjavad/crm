@@ -1,5 +1,5 @@
 
-$(document).ready(function($) {
+$(document).ready(function() {
 var data_list;
 var pge_con
 var now_page;
