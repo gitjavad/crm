@@ -159,8 +159,8 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
     }
 }
-$('#body_list').on('click','td',function () {
-    console.log($(this).index)
+$('#body_list').on('click','tr',function () {
+    console.log($(this).rowIndex)
 })
 
 });
