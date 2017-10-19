@@ -160,7 +160,7 @@ col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 }
 
 function mr() {
-
+console.log("hi")
 };
 });
 
