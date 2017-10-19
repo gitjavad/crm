@@ -199,7 +199,7 @@ console.log('ok')
 
                     } else {
 
-                        $('.frm_ed input').className+="hi";
+                        $('.i').className+="hi";
 
                     }
 
