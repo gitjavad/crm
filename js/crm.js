@@ -137,7 +137,7 @@ function set_table_row() {
         tb_p_num = db.length
     }
         var d;
-    for (d=first_pg-1;d>pge_con;d--){
+    for (d=first_pg;d>pge_con;d--){
 
         var row = table.insertRow(0);
          col1 = row.insertCell(0);
