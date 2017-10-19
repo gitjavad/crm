@@ -158,7 +158,7 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-        col1.innerHTML+='<form id="frm_edit'+d+ '"style="display: none"><input id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
+        col1.innerHTML+='<form id="frm_edit'+d+ '"style="display: none"><input class="" id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
 
 
 
@@ -198,8 +198,8 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                       $(this).fadeOut(500);
 
+myinput_eidt.className="animated fadeOut"
 
                     }
 
