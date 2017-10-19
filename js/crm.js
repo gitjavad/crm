@@ -193,13 +193,13 @@ row_index=row_index+1
                     dataType: 'json',
                     encode: true
                 }).done(function (data) {
-                    console.log(data);
 
                     if (data.success) {
 console.log('ok')
 
                     } else {
-                        console.log('error')
+                        $(this).fadeOut();
+
 
                     }
 
