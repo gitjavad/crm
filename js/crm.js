@@ -198,7 +198,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                        $(this).fadeOut();
+                        document.getElementById('frm_edit').fadeOut()
 
 
                     }
