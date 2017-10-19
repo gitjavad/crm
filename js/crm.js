@@ -154,13 +154,14 @@ function set_table_row() {
         col6.innerHTML = db[d].des;
 col1.innerHTML+='<form id="frm_edit"><input type="text"></input></form>'
 
+        col1.onclick(function () {
+           console.log("hi")
+        });
+
 
     }
 }
 
-document.getElementById('body_list').on('click', 'td', function () {
-   console.log("hi")
-});
 
 });
 
