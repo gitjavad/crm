@@ -152,12 +152,12 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-
-        row.setAttribute('onclick','my_db(this)')
+col1.innerHTML='<form class="frm_edit"><input type="text"></input></form>'
+        row.setAttribute('onclick','my_db()')
 
     }
 }
-console.log(adc)
+document.getElementById('frm_edit').style.cssText='display:none'
 
 
 });
