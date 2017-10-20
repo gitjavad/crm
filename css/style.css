@@ -117,3 +117,6 @@ form{
 .td_edit{
     color: green;
 }
+.frm_e_none{
+    display: none;
+}
