@@ -180,7 +180,7 @@ row_index=row_index+1
         if ( event.which == 13 ) {
             event.preventDefault();
 
-
+var txt=$(this).vall
 
                 var formData = {
                     'text': $(this).val(),
@@ -199,7 +199,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-console.log($(this).val())
+console.log(txt)
                        event.target.parentNode.className+=' animated fadeOut'
 
                         event.target.parentNode.style.cssText='display:none'
