@@ -158,8 +158,8 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-        col1.innerHTML+='<form class="frm_ed" id="frm_edit'+d+ '"style="display: none"><input class="i" id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
-
+        /*col1.innerHTML+='<form class="frm_ed" id="frm_edit'+d+ '"style="display: none"><input class="i" id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
+*/
 
 
     }
@@ -169,8 +169,10 @@ $('#body_list').on('click','td',function () {
     col_index = $(this).index();
 row_index=row_index+1
     row_index=now_page+row_index
-    document.getElementById('frm_edit'+row_index).style.cssText='display:block'
-    myinput_eidt =   document.getElementById('input_edit'+row_index+1)
+    $(this).innerHTML+='<form class="frm_e_block"><input type="text"></form>'
+    /*document.getElementById('frm_edit'+row_index).style.cssText='display:block'
+    myinput_eidt =   document.getElementById('input_edit'+row_index+1)*/
+
     console.log(row_index)
 
 })
@@ -200,9 +202,6 @@ console.log('ok')
 
                     } else {
 
-                       event.target.parentNode.className+=' animated fadeOut'
-
-                        event.target.parentNode.style.cssText='display:none'
                        event.target.parentNode.parentNode.setAttribute('class','td_edit')
                         event.target.parentNode.parentNode.innerHTML=txt
                     }

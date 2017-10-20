@@ -120,3 +120,6 @@ form{
 .frm_e_none{
     display: none !important;
 }
+.frm_e_block{
+    display: block !important;
+}
