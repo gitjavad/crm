@@ -200,7 +200,7 @@ console.log('ok')
 
                     } else {
                         event.target.className+=' animated fadeOut'
-                       console.log(event.target.parentElement())
+                       console.log(event.target.parentNode.className)
 
                     }
 
