@@ -202,7 +202,7 @@ console.log('ok')
 
                        event.target.parentNode.className+='frm_e_none'
                        event.target.parentNode.parentNode.setAttribute('class','td_edit')
-                        event.target.parentNode.parentNode.innerHTML=txt
+                        event.target.parentNode.parentNode.innerHTML+=txt
                     }
 
             });
