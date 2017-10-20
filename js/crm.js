@@ -203,7 +203,7 @@ console.log('ok')
                        event.target.parentNode.className+=' animated fadeOut'
 
                         event.target.parentNode.style.cssText='display:none'
-                       console.log(event.target.parentNode.parentNode)
+                       event.target.parentNode.parentNode.setAttribute('class','td_edit')
                     }
 
             });
