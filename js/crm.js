@@ -13,12 +13,7 @@ now_page=0
     var row_index;
     var col_index
     var table = document.getElementById('body_list');
-    $('#right_sp').click(function () {
-       next_page();
-
-    })
     $('body').persiaNumber();
-    $('#input_num').characterCounter();
     $('#modal1').modal();
 
     $(".sub_log").click(function () {
@@ -29,14 +24,11 @@ now_page=0
         });
 
         function processJson(data) {
-            /*var i;
-            for (i=0;i<data.length;i++){
-                console.log(data[i].code_product);
-            }*/
+
             if (data[0].message=="true"){
-data_list=data
+                data_list=data
                 var dat_len=data.length;
-                    pagenav()
+
 
 
 
@@ -81,42 +73,11 @@ data_list=data
             data_list=mydata
 
 set_table_row()
-            pagenav()
+
         }
     });
-    function next_page() {
-        $('body').persiaNumber();
-        remove_td()
 
-        now_page=now_page+10
-        pge_con=now_page+1
-        first_pg=first_pg+10
-        page_counter=page_counter+1
-pagenav()
-set_table_row()
-    }
-    function prev_page() {
 
-    }
-    /*function disable() {
-        var left_arr= document.getElementById('left_sp')
-        if (now_page=1){
-
-            left_arr.className=left_arr.className.replace(/\b activelb\b/, '');
-left_arr.className+=' disabl'
-        }else {
-            left_arr.className=left_arr.className.replace(/\b disabl\b/, '');
-left_arr.className+=' activelb'
-        }
-    }*/
-function pagenav() {
-    total=data_list.length
-    total=total/10;
-    total=Math.ceil(total)
-    var in_num=document.getElementById('input_num');
-    in_num.innerHTML=page_counter+" از "+total
-
-}
 function remove_td() {
     var table_td = document.getElementById('body_list');
     table_td.innerHTML=""
@@ -125,25 +86,8 @@ function remove_td() {
 function set_table_row() {
 
         var db=data_list;
-   /* var right_arr=document.getElementById('right_sp')
-    if (now_page>total){
-        right_arr.className=right_arr.className.replace(/\b activelb\b/, '')
-        right_arr.className+=' disabl'
-    }
-    else {
-        right_arr.className=right_arr.className.replace(/\b disabl\b/, '');
-    right_arr.className+=' activelb'
-    }
-    disable();*/
-
-
-
-    if(db.length<10) {
-        tb_p_num = db.length
-    }
         var d;
-    console.log(pge_con)
-    for (d=first_pg;d>=pge_con;d--){
+    for (d=data_list.length;d>=1;d--){
 
         var row = table.insertRow(0);
          col1 = row.insertCell(0);
@@ -158,9 +102,6 @@ function set_table_row() {
         col4.innerHTML = db[d].price_co;
         col5.innerHTML = db[d].material;
         col6.innerHTML = db[d].des;
-        /*col1.innerHTML+='<form class="frm_ed" id="frm_edit'+d+ '"style="display: none"><input class="i" id="input_edit'+d+'" type="text" name="text_edit"></input></form>'
-*/
-
 
     }
 }
@@ -171,8 +112,7 @@ row_index=row_index+1
     row_index=now_page+row_index
     console.log()
     e.target.innerHTML+='<form class="frm_e_block"><input type="text"></form>'
-    /*document.getElementById('frm_edit'+row_index).style.cssText='display:block'
-    myinput_eidt =   document.getElementById('input_edit'+row_index+1)*/
+
 
     console.log(row_index)
 
