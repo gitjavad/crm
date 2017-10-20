@@ -60,7 +60,7 @@ now_page=0
 
     })
     var s_len;
-    $('#input_serch').keyup(function(){
+    $('#input_serch').keypress(function(){
         now_page=1
        remove_td();
         $('#s_form').ajaxSubmit({
