@@ -200,7 +200,7 @@ console.log('ok')
 
                     } else {
 
-                       event.target.parentNode.className+=' animated fadeOut frm_e_none'
+                       event.target.parentNode.className+='frm_e_none'
                        event.target.parentNode.parentNode.setAttribute('class','td_edit')
                         event.target.parentNode.parentNode.innerHTML=txt
                     }
