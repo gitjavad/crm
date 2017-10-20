@@ -199,8 +199,8 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                        event.target.className+=' animated fadeOut'
-                       console.log(event.target.parentNode.className)
+
+                       event.target.parentNode.className+=' animated fadeOut'
 
                     }
 
