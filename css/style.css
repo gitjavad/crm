@@ -118,5 +118,5 @@ form{
     color: green;
 }
 .frm_e_none{
-    display: none;
+    display: none !important;
 }
