@@ -84,7 +84,7 @@ function remove_td() {
 }
 
 function set_table_row() {
-
+console.log(data_list.length)
         var db=data_list;
         var d;
     for (d=data_list.length;d>=1;d--){
