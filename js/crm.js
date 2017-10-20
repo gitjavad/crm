@@ -199,7 +199,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-                        event.target.className+='salam'
+                        event.target.className+=' animated fadeOut'
                     }
 
             });
