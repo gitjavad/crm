@@ -202,6 +202,7 @@ console.log('ok')
 
                        event.target.parentNode.className+=' animated fadeOut'
 
+                        event.target.parentNode.style.cssText='display:block'
                     }
 
             });
