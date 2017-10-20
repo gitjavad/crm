@@ -115,7 +115,7 @@ row_index=row_index+1
     console.log()
     td_clk=td_clk+1
     if (td_clk==1){
-        e.target.innerHTML+=e.target.innerHTML+'<form class="frm_e_block"><input type="text"></form>'
+        e.target.innerHTML+='<form class="frm_e_block"><input type="text"></form>'
     }
 
 
