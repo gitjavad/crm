@@ -5,6 +5,7 @@ var pge_con
 var now_page;
 var tb_p_num;
 var total
+    var td_clk=0;
     var col1
     var page_counter=1
 now_page=0
@@ -112,7 +113,11 @@ row_index=row_index+1
     row_index=now_page+row_index
     console.log()
     console.log()
-    e.target.innerHTML+=e.target.innerHTML+'<form class="frm_e_block"><input type="text"></form>'
+    td_clk=td_clk+1
+    if (td_clk==1){
+        e.target.innerHTML+=e.target.innerHTML+'<form class="frm_e_block"><input type="text"></form>'
+    }
+
 
 
     console.log(row_index)
@@ -123,7 +128,7 @@ row_index=row_index+1
    $('#body_list').on('keypress','input',function (event) {
         if ( event.which == 13 ) {
             event.preventDefault();
-
+td_clk=0
 var txt=$(this).val()
 
                 var formData = {
