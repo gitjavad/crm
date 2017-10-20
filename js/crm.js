@@ -200,9 +200,11 @@ console.log('ok')
 
                     } else {
 
-                       event.target.parentNode.className+=' frm_e_none'
+                       event.target.parentNode.className+=' animated fadeOut'
+
+                        event.target.parentNode.style.cssText='display:none'
                        event.target.parentNode.parentNode.setAttribute('class','td_edit')
-                        event.target.parentNode.parentNode.innerHTML+=txt
+                        event.target.parentNode.parentNode.innerHTML=txt
                     }
 
             });
