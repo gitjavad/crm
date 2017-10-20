@@ -200,7 +200,7 @@ console.log('ok')
 
                     } else {
 
-console.log( $('#input_edit2').className)
+console.log( event.currentTarget.id)
                     }
 
             });
