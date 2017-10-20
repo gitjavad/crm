@@ -180,7 +180,7 @@ row_index=row_index+1
         if ( event.which == 13 ) {
             event.preventDefault();
 
-var txt=$(this).vall
+var txt=$(this).val
 
                 var formData = {
                     'text': $(this).val(),
