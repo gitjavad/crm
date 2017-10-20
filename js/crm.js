@@ -87,7 +87,7 @@ function set_table_row() {
 console.log(data_list.length)
         var db=data_list;
         var d;
-    for (d=data_list.length;d>=1;d--){
+    for (d=data_list.length-1;d>=1;d--){
 
         var row = table.insertRow(0);
          col1 = row.insertCell(0);
