@@ -200,7 +200,8 @@ console.log('ok')
 
                     } else {
                         event.target.className+=' animated fadeOut'
-                       console.log( $('#frm_ed').className)
+                       console.log(event.target.parent.className)
+
                     }
 
             });
