@@ -169,8 +169,8 @@ $('#body_list').on('click','td',function (e) {
     col_index = $(this).index();
 row_index=row_index+1
     row_index=now_page+row_index
-    console.log(e.target.nodeName)
-    $(this).innerHTML+='<form class="frm_e_block"><input type="text"></form>'
+    console.log()
+    e.target.innerHTML+='<form class="frm_e_block"><input type="text"></form>'
     /*document.getElementById('frm_edit'+row_index).style.cssText='display:block'
     myinput_eidt =   document.getElementById('input_edit'+row_index+1)*/
 
