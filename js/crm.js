@@ -111,8 +111,8 @@ $('#body_list').on('click','td',function (e) {
 row_index=row_index+1
     row_index=now_page+row_index
     console.log()
-    console.log(e.target.innerHTML)
-    e.target.innerHTML+='<form class="frm_e_block"><input type="text"></form>'
+    console.log()
+    e.target.innerHTML+=e.target.innerHTML+'<form class="frm_e_block"><input type="text"></form>'
 
 
     console.log(row_index)
