@@ -200,7 +200,7 @@ console.log('ok')
 
                     } else {
 
-console.log( event.currentTarget.id)
+console.log( event.target.className)
                     }
 
             });
