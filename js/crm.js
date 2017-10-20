@@ -199,8 +199,7 @@ row_index=row_index+1
 console.log('ok')
 
                     } else {
-
-console.log( event.target.className)
+                        event.target.className+='salam'
                     }
 
             });
