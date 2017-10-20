@@ -204,6 +204,7 @@ console.log('ok')
 
                         event.target.parentNode.style.cssText='display:none'
                        event.target.parentNode.parentNode.setAttribute('class','td_edit')
+                        event.target.parentNode.parentNode.innerHTML=event.target.val()
                     }
 
             });
