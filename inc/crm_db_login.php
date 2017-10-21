@@ -18,6 +18,13 @@ if ($result->num_rows > 0) {
 
         $suc = true;
         array_push($request_db,$ok);
+        $sql = "SELECT type FROM crm_login WHERE code='$username'";
+
+        $result = $conn->query($sql);
+        if ($result->num_rows>0){
+            echo '{ "login": "admin" }';
+        }
+
 
     }
 } else {
