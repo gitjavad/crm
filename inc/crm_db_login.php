@@ -9,25 +9,7 @@ $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 mysqli_set_charset($conn,'utf8');
 $request_db = array();
 
-$notok=array("message" => "false");
-$sql = "SELECT type FROM crm_login WHERE code='".$username."'";
-
-$result = $conn->query($sql);
-if ($result->num_rows>0){
-while($row = $result->fetch_assoc()) {
-    if ($row['type']=="admin"){
-
-        $ok=array("message" => "true","type"=>"admin");
-        array_push($request_db,$ok);
-    }else{
-        $ok=array("message" => "true","type"=>"noadmin");
-        array_push($request_db,$ok);
-    }}}
-
-else {
-    echo "0 results";
-}
-/*$sql = "SELECT code FROM crm_login WHERE code='$username' AND pass='$password'";
+$sql = "SELECT code FROM crm_login WHERE code='$username' AND pass='$password'";
 $result = $conn->query($sql);
 $ok=array("message" => "true");
 $notok=array("message" => "false");
@@ -37,20 +19,7 @@ if ($result->num_rows > 0) {
 
         $suc = true;
 
-        /*$sql = "SELECT 'type' FROM crm_login WHERE code='$username'";
 
-        $result = $conn->query($sql);
-        if ($result->num_rows>0){
-            $user_chek=array("type"=>"admin");
-          array_push($ok,$user_chek) ;
-            array_push($request_db,$ok);
-        }else{
-            $user_chek=array("type"=>"noadmin");
-            array_push($ok,$user_chek) ;
-            array_push($request_db,$ok);
-        }*/
-
-/*
     }
 } else {
     $suc=false;
@@ -60,24 +29,26 @@ if ($result->num_rows > 0) {
 
 
 if ($suc) {
-    /*$sql = "SELECT type FROM crm_login WHERE code='".$username."'";
+    $sql = "SELECT type FROM crm_login WHERE code='".$username."'";
 
-        $result = $conn->query($sql);
-        if ($result->num_rows>0){
+    $result = $conn->query($sql);
+    if ($result->num_rows>0){
+        while($row = $result->fetch_assoc()) {
+            if ($row['type']=="admin"){
 
-            if ($result[0]=="admin"){
-                $user_chek=array("type"=>"admin");
-                 array_push($ok,$user_chek) ;
-                 array_push($request_db,$ok);
-            }else{
-                $user_chek=array("type"=>"noadmin");
-                array_push($ok,$user_chek) ;
+                $ok=array("message" => "true","type"=>"admin");
                 array_push($request_db,$ok);
-            }
-        }*/
+            }else{
+                $ok=array("message" => "true","type"=>"noadmin");
+                array_push($request_db,$ok);
+            }}}
+
+    else {
+        echo "0 results";
+    }
 
 
-  /*  $sql = "SELECT code_product, material, price_co, price_custom, company, des, name FROM crm";
+    $sql = "SELECT code_product, material, price_co, price_custom, company, des, name FROM crm";
     $result = $conn->query($sql);
 
 
@@ -92,7 +63,7 @@ if ($suc) {
         echo '{ "message": "false2" }';
     }
 
-}*/
+}
 $conn->close();
 if(count($request_db)>0){
     printf(json_encode($request_db));
