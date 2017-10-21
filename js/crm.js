@@ -30,8 +30,7 @@ now_page=0
                 data_list=data
                 var dat_len=data.length;
 
-
-
+               console.log(data)
 
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
