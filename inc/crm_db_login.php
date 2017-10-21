@@ -1,6 +1,6 @@
 <?php
-$username=$_GET['code'];
-$password=$_GET['pass'];
+$username=$_POST['code'];
+$password=$_POST['pass'];
 $hostname="localhost";
 $user = "hirad_admin15023";
 $pass= "9133647736!@#";
