@@ -25,7 +25,7 @@ now_page=0
         });
 
         function processJson(data) {
-            console.log(data.type)
+            console.log(data)
             if (data[0].message=="true"){
                 data_list=data
                 var dat_len=data.length;
