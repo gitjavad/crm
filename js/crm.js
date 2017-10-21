@@ -25,12 +25,12 @@ now_page=0
         });
 
         function processJson(data) {
-            console.log(data)
+
             if (data[0].message=="true"){
                 data_list=data
                 var dat_len=data.length;
 
-
+console.log(data[0].type)
 
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
