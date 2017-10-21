@@ -29,23 +29,7 @@ if ($result->num_rows > 0) {
 
 
 if ($suc) {
-    $sql = "SELECT type FROM crm_login WHERE code='".$username."'";
 
-    $result = $conn->query($sql);
-    if ($result->num_rows>0){
-        while($row = $result->fetch_assoc()) {
-            if ($row['type']=="admin"){
-
-                $ok=array("message" => "true","type"=>"admin");
-                array_push($request_db,$ok);
-            }else{
-                $ok=array("message" => "true","type"=>"noadmin");
-                array_push($request_db,$ok);
-            }}}
-
-    else {
-        echo "0 results";
-    }
 
 
     $sql = "SELECT code_product, material, price_co, price_custom, company, des, name FROM crm";
