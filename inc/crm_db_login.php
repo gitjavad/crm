@@ -20,7 +20,7 @@ while($row = $result->fetch_assoc()) {
         $ok=array("message" => "true","type"=>"admin");
         array_push($request_db,$ok);
     }else{
-        $ok=array("message" => "true","type"=>"admin");
+        $ok=array("message" => "true","type"=>"nadmin");
         array_push($request_db,$ok);
     }}}
 
