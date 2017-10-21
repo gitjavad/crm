@@ -16,7 +16,7 @@ $result = $conn->query($sql);
 if ($result->num_rows>0){
 while($row = $result->fetch_assoc()) {
     if ($row['type']=="admin"){
-        $user_chek=array("type"=>"admin");
+        $user_chek=("{type:admin}");
         array_push($ok,$user_chek) ;
         array_push($request_db,$ok);
     }else{
@@ -97,4 +97,5 @@ if ($suc) {
 $conn->close();
 if(count($request_db)>0){
     printf(json_encode($request_db));
+    printf()
 }
