@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
 
         $suc = true;
 
-        $sql = "SELECT type FROM crm_login WHERE code='$username'";
+        $sql = "SELECT 'type' FROM crm_login WHERE code='$username'";
 
         $result = $conn->query($sql);
         if ($result->num_rows>0){
