@@ -8,6 +8,8 @@ $mysql_database = "hirad-co_com_site";
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 mysqli_set_charset($conn,'utf8');
 $request_db = array();
+$ok=array("message" => "true");
+$notok=array("message" => "false");
 $sql = "SELECT type FROM crm_login WHERE code='".$username."'";
 
 $result = $conn->query($sql);
