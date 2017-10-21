@@ -30,7 +30,7 @@ now_page=0
                 data_list=data
                 var dat_len=data.length;
 
-console.log(data[0].type)
+
 
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
@@ -105,21 +105,25 @@ console.log(data_list.length)
 
     }
 }
+
 $('#body_list').on('click','td',function (e) {
-    row_index = $(this).closest("tr").index();
-    col_index = $(this).index();
-row_index=row_index+1
-    row_index=now_page+row_index
-    console.log()
-    console.log()
-    td_clk=td_clk+1
-    if (td_clk==1){
-        e.target.innerHTML+='<form class="frm_e_block"><input type="text"></form>'
+    if (data[0].type=="admin") {
+
+
+        row_index = $(this).closest("tr").index();
+        col_index = $(this).index();
+        row_index = row_index + 1
+        row_index = now_page + row_index
+        console.log()
+        console.log()
+        td_clk = td_clk + 1
+        if (td_clk == 1) {
+            e.target.innerHTML += '<form class="frm_e_block"><input type="text"></form>'
+        }
+
+
+        console.log(row_index)
     }
-
-
-
-    console.log(row_index)
 
 })
 
