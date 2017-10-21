@@ -31,16 +31,33 @@ if ($result->num_rows > 0) {
             array_push($request_db,$ok);
         }*/
 
-        array_push($request_db,$ok);
 
     }
 } else {
     $suc=false;
-    array_push($request_db,$notok);
 
+    array_push($request_db,$notok);
 }
 
+
 if ($suc) {
+    $sql = "SELECT type FROM crm_login WHERE code='$username'";
+
+        $result = $conn->query($sql);
+        if ($result->num_rows>0){
+
+            if ($result[0]=="admin"){
+                $user_chek=array("type"=>"admin");
+                 array_push($ok,$user_chek) ;
+                 array_push($request_db,$ok);
+            }else{
+                $user_chek=array("type"=>"noadmin");
+                array_push($ok,$user_chek) ;
+                array_push($request_db,$ok);
+            }
+        }
+
+
     $sql = "SELECT code_product, material, price_co, price_custom, company, des, name FROM crm";
     $result = $conn->query($sql);
 
