@@ -17,7 +17,20 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 
         $suc = true;
-        array_push($request_db,$ok);
+
+        $sql = "SELECT type FROM crm_login WHERE code='$username'";
+
+        $result = $conn->query($sql);
+        if ($result->num_rows>0){
+            $user_chek=array("type"=>"admin");
+          array_push($ok,$user_chek) ;
+            array_push($request_db,$ok);
+        }else{
+            $user_chek=array("type"=>"noadmin");
+            array_push($ok,$user_chek) ;
+            array_push($request_db,$ok);
+        }
+
 
 
     }
