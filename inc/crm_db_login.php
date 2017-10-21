@@ -97,5 +97,5 @@ if ($suc) {
 $conn->close();
 if(count($request_db)>0){
     printf(json_encode($request_db));
-    printf()
+
 }
