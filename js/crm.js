@@ -3,6 +3,7 @@ $(document).ready(function() {
 var data_list;
 var pge_con
 var now_page;
+var user_type
 var tb_p_num;
 var total
     var td_clk=0;
@@ -30,7 +31,7 @@ now_page=0
                 data_list=data
                 var dat_len=data.length;
 
-
+user_type=data[0].type
 
                 document.getElementById('main_user_login').style.cssText='display:none';
                 document.getElementById('ok_login').style.cssText='display:block';
@@ -107,7 +108,7 @@ console.log(data_list.length)
 }
 
 $('#body_list').on('click','td',function (e) {
-    if (data[0].type=="admin") {
+    if (user_type=="admin") {
 
 
         row_index = $(this).closest("tr").index();
