@@ -10,7 +10,7 @@ $request_db = array();
 $conn = new mysqli($hostname, $user, $pass, $mysql_database);
 mysqli_set_charset($conn,'utf8');
 $request_db = array();
-$sql  = "SELECT *  FROM crm WHERE code_product LIKE '%$s_key%'";
+$sql  = "SELECT *  FROM crm WHERE name LIKE '%$s_key%'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     array_push($request_db,$ok);
